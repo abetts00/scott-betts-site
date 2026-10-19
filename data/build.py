@@ -234,7 +234,7 @@ def main():
     stats_html = '<div class="stats"><div class="wrap">' + "".join(f'<div class="stat"><b>{esc(a)}</b><span>{esc(b)}</span></div>' for a, b in tiles)
     home = f"""
 <div class="hero"><div class="wrap">
-<div class="badge">2018 Pacer of the Year &middot; Phoenix Warrior N</div>
+<div class="badge">2018 Meadows Horse of the Year &middot; Phoenix Warrior N</div>
 <h1>Scott Betts<br><span class="grad">Racing</span></h1>
 <p class="tag">{esc(cfg['tagline'])}. Standardbreds trained at The Meadows and raced at Northfield Park and beyond.</p>
 <a class="btn" href="horses.html">Meet the Horses</a><a class="btn alt" href="replays.html">Watch Replays</a>
@@ -359,10 +359,10 @@ def main():
     memoriam_body = f"""
 <div class="page-head memorial"><div class="wrap"><div class="eyebrow">In loving memory</div><h1>In <span class="grad">Memoriam</span></h1><p class="note" style="margin-top:14px">Phoenix Warrior N &middot; Our Honor Defend</p></div></div>
 <section><div class="wrap"><div class="story" style="max-width:720px;margin:0 auto;text-align:center">
-<h2>Phoenix Warrior N</h2><p class="note">2018 Pacer of the Year</p>{ph}</div>
+<h2>Phoenix Warrior N</h2><p class="note">2018 Meadows Horse of the Year</p>{ph}</div>
 <div class="mem-gal">{gal}</div>
 {hon_html}</div></section>{contact}"""
-    (out_p / "memoriam.html").write_text(page(cfg, "In Memoriam | " + cfg["name"], memoriam_body, "memoriam", "Remembering Phoenix Warrior N, 2018 Pacer of the Year, and Our Honor Defend.", mem_css))
+    (out_p / "memoriam.html").write_text(page(cfg, "In Memoriam | " + cfg["name"], memoriam_body, "memoriam", "Remembering Phoenix Warrior N, 2018 Meadows Horse of the Year, and Our Honor Defend.", mem_css))
     (out_p / "phoenix.html").write_text("<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta http-equiv=\"refresh\" content=\"0;url=memoriam.html\"><link rel=\"canonical\" href=\"memoriam.html\"><title>In Memoriam | " + esc(cfg["name"]) + "</title></head><body><p><a href=\"memoriam.html\">In Memoriam</a></p></body></html>")
 
     print(f"built {len(horses)} horses (+{len(pending)} pending), {len(all_rows)} starts -> {out_p}")
