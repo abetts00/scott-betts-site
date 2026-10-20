@@ -80,6 +80,7 @@ def brand_html(cfg):
 NAV = [
     ("index.html", "Home", "home"),
     ("horses.html", "The Horses", "horses"),
+    ("entries.html", "Entries", "entries"),
     ("results.html", "Results", "results"),
     ("replays.html", "Replays", "replays"),
     ("memoriam.html", "In Memoriam", "memoriam"),
@@ -286,6 +287,13 @@ def main():
 <section><div class="wrap"><p class="sub">Current members of the stable. Records reflect starts this season.</p>
 <div class="grid">{"".join(cards) or '<p class="note">Roster coming soon.</p>'}</div></div></section>{contact}"""
     (out_p / "horses.html").write_text(page(cfg, "The Horses | " + cfg["name"], horses_body, "horses"))
+
+    # ---------- entries ----------
+    entries_body = f"""
+<div class="page-head"><div class="wrap"><div class="eyebrow">Coming up</div><h1>Upcoming <span class="grad">Entries</span></h1></div></div>
+<section><div class="wrap"><p class="sub">Horses entered to race in the coming days. Updated daily from TrackMaster.</p>
+{upcoming_block(upcoming)}</div></section>{contact}"""
+    (out_p / "entries.html").write_text(page(cfg, "Entries | " + cfg["name"], entries_body, "entries", "Upcoming race entries for the Scott Betts stable."))
 
     # ---------- results ----------
     res_body = f"""
