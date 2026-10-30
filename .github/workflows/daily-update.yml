@@ -1,0 +1,56 @@
+name: Daily race update
+ 
+# Reads TrackMaster emails, updates data/data.json, rebuilds the pages and
+# pushes to main. Vercel deploys automatically from that push.
+on:
+  schedule:
+    - cron: "23 11 * * *"   # ~7:23am Eastern (after overnight results)
+    - cron: "23 17 * * *"   # ~1:23pm Eastern (after morning entries)
+    - cron: "23 23 * * *"   # ~7:23pm Eastern (after afternoon entries/results)
+  workflow_dispatch: {}     # "Run workflow" button for a manual run
+ 
+permissions:
+  contents: write
+ 
+concurrency:
+  group: daily-race-update
+  cancel-in-progress: false
+ 
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+ 
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+ 
+      - name: Read TrackMaster emails and update data
+        env:
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          SUMMARY_FILE: ${{ runner.temp }}/summary.txt
+        run: python3 -I .github/scripts/trackmaster_update.py data/data.json
+ 
+      - name: Rebuild pages
+        run: python3 -I data/build.py data/data.json data/config.json .
+ 
+      - name: Commit and push if anything new
+        env:
+          SUMMARY_FILE: ${{ runner.temp }}/summary.txt
+        run: |
+          if git diff --quiet -- data/data.json; then
+            echo "No new results or entries; nothing to publish." | tee -a "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          summary="$(cat "$SUMMARY_FILE")"
+          git config user.name "abetts00"
+          git config user.email "55668870+abetts00@users.noreply.github.com"
+          git add -A -- data/data.json '*.html'
+          git commit -m "Daily update: ${summary}"
+          git pull --rebase origin main
+          git push origin main
+          echo "Published: ${summary}" | tee -a "$GITHUB_STEP_SUMMARY"
+ 
