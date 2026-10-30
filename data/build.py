@@ -2,7 +2,8 @@
 """Scott Betts Racing static site generator.
 
 Usage: python3 build.py <data.json> <config.json> <output_dir>
-Pages: index, horses, results, replays, about, memoriam, phoenix (redirect)
+Pages: index, horses, racing (entries + results + replays), about, memoriam;
+redirects: entries, results, replays -> racing sections, phoenix -> memoriam
 """
 import html
 import json
@@ -80,9 +81,7 @@ def brand_html(cfg):
 NAV = [
     ("index.html", "Home", "home"),
     ("horses.html", "The Horses", "horses"),
-    ("entries.html", "Entries", "entries"),
-    ("results.html", "Results", "results"),
-    ("replays.html", "Replays", "replays"),
+    ("racing.html", "Race Day", "racing"),
     ("memoriam.html", "In Memoriam", "memoriam"),
     ("about.html", "Meet Scott", "about"),
 ]
@@ -238,15 +237,15 @@ def main():
 <div class="badge">2018 Meadows Horse of the Year &middot; Phoenix Warrior N</div>
 <h1>Scott Betts<br><span class="grad">Racing</span></h1>
 <p class="tag">{esc(cfg['tagline'])}. Standardbreds trained at The Meadows and raced at Northfield Park and beyond.</p>
-<a class="btn" href="horses.html">Meet the Horses</a><a class="btn alt" href="replays.html">Watch Replays</a>
+<a class="btn" href="horses.html">Meet the Horses</a><a class="btn alt" href="racing.html#replays">Watch Replays</a>
 </div></div>
 {stats_html}
 </div></div>
 <section><div class="wrap cols">
 <div><div class="eyebrow">Live from the track</div><h2>Recent Results</h2><p class="sub">Updated automatically every morning from TrackMaster race charts.</p>
 {results_table(all_rows, 8)}
-<p><a href="results.html">See all results &rarr;</a></p></div>
-<div><div class="eyebrow">Coming up</div><h2>Up Next</h2><p class="sub">Entries for the coming days.</p>{upcoming_block(upcoming)}</div>
+<p><a href="racing.html#results">See all results &rarr;</a></p></div>
+<div><div class="eyebrow">Coming up</div><h2>Up Next</h2><p class="sub">Entries for the coming days.</p>{upcoming_block(upcoming)}<p><a href="racing.html#entries">All entries &rarr;</a></p></div>
 </div></section>
 <section class="alt"><div class="wrap about">
 {photo_html(cfg)}
@@ -288,22 +287,7 @@ def main():
 <div class="grid">{"".join(cards) or '<p class="note">Roster coming soon.</p>'}</div></div></section>{contact}"""
     (out_p / "horses.html").write_text(page(cfg, "The Horses | " + cfg["name"], horses_body, "horses"))
 
-    # ---------- entries ----------
-    entries_body = f"""
-<div class="page-head"><div class="wrap"><div class="eyebrow">Coming up</div><h1>Upcoming <span class="grad">Entries</span></h1></div></div>
-<section><div class="wrap"><p class="sub">Horses entered to race in the coming days. Updated daily from TrackMaster.</p>
-{upcoming_block(upcoming)}</div></section>{contact}"""
-    (out_p / "entries.html").write_text(page(cfg, "Entries | " + cfg["name"], entries_body, "entries", "Upcoming race entries for the Scott Betts stable."))
-
-    # ---------- results ----------
-    res_body = f"""
-<div class="page-head"><div class="wrap"><div class="eyebrow">Every start, every week</div><h1>Race <span class="grad">Results</span></h1></div></div>
-<section><div class="wrap"><p class="sub">{len(raced)} starts, {len(wins)} wins this season. Winners are highlighted. Click Chart for the full TrackMaster race chart.</p>
-{results_table(all_rows)}</div></section>
-<section class="alt"><div class="wrap"><div class="eyebrow">Coming up</div><h2>Upcoming</h2>{upcoming_block(upcoming)}</div></section>"""
-    (out_p / "results.html").write_text(page(cfg, "Results | " + cfg["name"], res_body, "results"))
-
-    # ---------- replays ----------
+    # ---------- racing (entries + results + replays on one page) ----------
     win_cards = []
     for r in wins[:12]:
         t = final_time(r.get("time")) or ""
@@ -326,15 +310,33 @@ def main():
             f'title="{esc(v.get("title",""))}" allowfullscreen></iframe><p class="note">{esc(v.get("title",""))}</p></div>'
             for v in vids
         )
-        vid_html = f'<section class="alt"><div class="wrap"><div class="eyebrow">Featured</div><h2>Race Videos</h2><div class="vids">{items}</div></div></section>'
-    rep_body = f"""
-<div class="page-head"><div class="wrap"><div class="eyebrow">Relive it</div><h1>Race <span class="grad">Replays</span></h1></div></div>
-<section><div class="wrap"><h2>Win Circle</h2>
+        vid_html = f'<section id="videos"><div class="wrap"><div class="eyebrow">Featured</div><h2>Race Videos</h2><div class="vids">{items}</div></div></section>'
+    jump_css = ('<style>.jump{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}'
+                '.jump a{border:1.5px solid var(--line);color:var(--text);text-decoration:none;padding:9px 16px;border-radius:999px;'
+                'font:700 .72rem/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase}'
+                '.jump a:hover{border-color:var(--flame2);color:var(--flame2)}'
+                'section[id]{scroll-margin-top:90px}</style>')
+    jumps = [("entries", "Entries"), ("replays", "Replays")] + ([("videos", "Videos")] if vids else []) + [("results", "Results")]
+    racing_body = f"""
+<div class="page-head"><div class="wrap"><div class="eyebrow">Entries &middot; Replays &middot; Results</div><h1>Race <span class="grad">Day</span></h1>
+<div class="jump">{"".join(f'<a href="#{k}">{v}</a>' for k, v in jumps)}</div></div></div>
+<section id="entries"><div class="wrap"><div class="eyebrow">Coming up</div><h2>Upcoming Entries</h2>
+<p class="sub">Horses entered to race in the coming days. Updated daily from TrackMaster.</p>
+{upcoming_block(upcoming)}</div></section>
+<section id="replays" class="alt"><div class="wrap"><div class="eyebrow">Relive it</div><h2>Win Circle</h2>
 <p class="sub">Every winner this season. Each button opens the TrackMaster chart, which has the video replay.</p>
 <div class="wins">{"".join(win_cards) or '<p class="note">No wins yet this season.</p>'}</div></div></section>
 {vid_html}
-<section class="alt"><div class="wrap"><h2>Every Start</h2><p class="sub">Chart and replay links for the most recent races.</p>{results_table(all_rows, 24)}</div></section>"""
-    (out_p / "replays.html").write_text(page(cfg, "Replays | " + cfg["name"], rep_body, "replays"))
+<section id="results"{' class="alt"' if vids else ''}><div class="wrap"><div class="eyebrow">Every start, every week</div><h2>Race Results</h2>
+<p class="sub">{len(raced)} starts, {len(wins)} wins this season. Winners are highlighted. Click Chart for the full TrackMaster race chart and replay.</p>
+{results_table(all_rows)}</div></section>{contact}"""
+    (out_p / "racing.html").write_text(page(cfg, "Race Day | " + cfg["name"], racing_body, "racing",
+        "Upcoming entries, race results and replays for the Scott Betts stable.", jump_css))
+    for old, anchor, label in (("entries", "entries", "Entries"), ("results", "results", "Results"), ("replays", "replays", "Replays")):
+        (out_p / f"{old}.html").write_text(
+            f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=racing.html#{anchor}">'
+            f'<link rel="canonical" href="racing.html"><title>{label} | {esc(cfg["name"])}</title></head>'
+            f'<body><p><a href="racing.html#{anchor}">{label}</a></p></body></html>')
 
     # ---------- about ----------
     about_body = f"""
