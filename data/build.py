@@ -9,6 +9,7 @@ import html
 import json
 import re
 import sys
+from urllib.parse import quote
 from datetime import date, datetime
 from pathlib import Path
 
@@ -82,6 +83,7 @@ NAV = [
     ("index.html", "Home", "home"),
     ("horses.html", "The Horses", "horses"),
     ("racing.html", "Race Day", "racing"),
+    ("owners.html", "Become an Owner", "owners"),
     ("memoriam.html", "In Memoriam", "memoriam"),
     ("about.html", "Meet Scott", "about"),
 ]
@@ -150,15 +152,48 @@ def photo_html(cfg):
         return f'<div class="photo"><img src="{esc(p)}" alt="Scott Betts"></div>'
     return '<div class="photo">SB</div>'
 
+def share_pct(cfg, name):
+    """Percent of a horse available for fractional purchase, or None if not listed."""
+    av = {k.upper(): v for k, v in cfg.get("ownership", {}).get("available", {}).items()}
+    v = av.get(name.upper())
+    try:
+        v = float(v)
+    except (TypeError, ValueError):
+        return None
+    return max(0.0, min(100.0, v))
+
+def pct_txt(v):
+    return f"{v:g}%"
+
 def media_html(cfg, name):
     m = {k.upper(): v for k, v in cfg.get("horseMedia", {}).items()}.get(name.upper())
-    if not m:
-        return ""
-    st = "width:100%;height:auto;max-height:420px;object-fit:cover;display:block;border-radius:8px;margin-bottom:14px;background:#000"
-    if m.get("video"):
+    pct = share_pct(cfg, name)
+    st = "width:100%;height:auto;max-height:420px;object-fit:cover;display:block;border-radius:8px;background:#000"
+    if m and m.get("video"):
         poster = f' poster="{esc(m["photo"])}"' if m.get("photo") else ""
-        return f'<video controls playsinline preload="metadata"{poster} src="{esc(m["video"])}" style="{st}"></video>'
-    return f'<img src="{esc(m["photo"])}" alt="{esc(name.title())}" loading="lazy" style="{st}">'
+        inner = f'<video controls playsinline preload="metadata"{poster} src="{esc(m["video"])}" style="{st}"></video>'
+    elif m and m.get("photo"):
+        inner = f'<img src="{esc(m["photo"])}" alt="{esc(name.title())}" loading="lazy" style="{st}">'
+    elif pct is not None:
+        initials = "".join(w[0] for w in name.split()[:3] if w[:1].isalpha()).upper()
+        inner = f'<div class="sf-ph">{esc(initials)}</div>'
+    else:
+        return ""
+    if pct is None:
+        return f'<div style="margin-bottom:14px">{inner}</div>'
+    # Ring drawn around the photo: the red part of the border = share available.
+    if pct >= 100:
+        label = "100% available"
+    elif pct <= 0:
+        label = "Fully owned"
+    else:
+        label = f"{pct_txt(pct)} available"
+    cls = " sold" if pct <= 0 else ""
+    return (
+        f'<div class="sf{cls}" style="--p:{pct:g}" title="{esc(label)} for fractional ownership">'
+        f'<svg aria-hidden="true"><rect class="sf-track" pathLength="100"/><rect class="sf-fill" pathLength="100"/></svg>'
+        f'{inner}<a class="sf-tag" href="owners.html?horse={quote(name.title())}#inquire">{esc(label)}</a></div>'
+    )
 
 def main():
     data_p, cfg_p, out_p = map(Path, sys.argv[1:4])
@@ -217,7 +252,7 @@ def main():
         contact = (
             '<section class="alt"><div class="wrap"><div class="eyebrow">Get in the winner\'s circle</div><h2>Owners &amp; Inquiries</h2>'
             '<p class="sub">Interested in owning a share of a racehorse, or sending us a horse to train?</p>'
-            f'<div class="card">{"<br>".join(lines)}</div></div></section>'
+            f'<div class="card">{"<br>".join(lines)}<p style="margin:16px 0 0"><a class="btn" href="owners.html">How ownership works</a></p></div></div></section>'
         )
 
     # ---------- home ----------
@@ -281,9 +316,18 @@ def main():
             '<div class="pedi">Race record loading soon</div>'
             '<div class="last" style="border:0;padding-top:0;margin-top:0">First starts will appear here automatically as soon as results post.</div></div>'
         )
+    own_cfg = cfg.get("ownership", {})
+    listed = {n: share_pct(cfg, n) for n in own_cfg.get("available", {}) if share_pct(cfg, n) is not None}
+    legend = ""
+    if any(v > 0 for v in listed.values()):
+        legend = (
+            '<div class="sf-legend"><span class="sf-key"></span><div><b>Red ring = share available to own.</b> '
+            'The more of the border that is lit, the more of that horse is open for fractional purchase. '
+            f'<a href="owners.html">How ownership works &rarr;</a></div></div>'
+        )
     horses_body = f"""
 <div class="page-head"><div class="wrap"><div class="eyebrow">The barn</div><h1>The <span class="grad">Horses</span></h1></div></div>
-<section><div class="wrap"><p class="sub">Current members of the stable. Records reflect starts this season.</p>
+<section><div class="wrap"><p class="sub">Current members of the stable. Records reflect starts this season.</p>{legend}
 <div class="grid">{"".join(cards) or '<p class="note">Roster coming soon.</p>'}</div></div></section>{contact}"""
     (out_p / "horses.html").write_text(page(cfg, "The Horses | " + cfg["name"], horses_body, "horses"))
 
@@ -346,6 +390,115 @@ def main():
 <div class="story">{story_html(cfg) or '<p class="note">Scott\'s story is coming soon.</p>'}</div>
 </div></section>{contact}"""
     (out_p / "about.html").write_text(page(cfg, "Meet Scott | " + cfg["name"], about_body, "about"))
+
+    # ---------- become an owner ----------
+    rate = own_cfg.get("dailyRate", 75)
+    min_share = own_cfg.get("minShare", 1)
+    try:
+        rate_f = float(rate)
+    except (TypeError, ValueError):
+        rate_f = None
+    def money(v):
+        return f"${v:,.2f}".replace(".00", "")
+    examples = ""
+    if rate_f:
+        ex_rows = "".join(
+            f'<tr><td><b>{s}%</b></td><td>{money(rate_f * s / 100)}</td><td>{money(rate_f * s / 100 * 30)}</td></tr>'
+            for s in (1, 5, 10, 25, 50)
+            if s >= float(min_share)
+        )
+        examples = (
+            '<div class="scroll" style="margin-top:18px"><table style="min-width:0"><thead><tr><th>Your share</th><th>Training per day</th>'
+            f'<th>Training per 30 days</th></tr></thead><tbody>{ex_rows}</tbody></table></div>'
+            f'<p class="note">Based on the {money(rate_f)}/day training rate. The horse\'s other expenses are split the same way.</p>'
+        )
+    by_name = {h["name"].upper(): h for h in horses}
+    avail_cards = []
+    for n, v in sorted(listed.items(), key=lambda kv: -kv[1]):
+        if v <= 0:
+            continue
+        h = by_name.get(n.upper())
+        rec = ""
+        if h:
+            st = horse_stats(h)
+            rec = f'<div class="note">{st["starts"]} start{"" if st["starts"] == 1 else "s"} &middot; {st["w"]} win{"" if st["w"] == 1 else "s"} &middot; best {esc(st["best"] or "-")}</div>'
+        avail_cards.append(
+            f'<div class="card horse">{media_html(cfg, n)}<h3>{esc(n.title())}</h3>{rec}'
+            f'<a class="play" href="owners.html?horse={quote(n.title())}#inquire">Ask about {esc(pct_txt(v))}</a></div>'
+        )
+    avail_html = (
+        f'<div class="grid">{"".join(avail_cards)}</div>' if avail_cards else
+        '<div class="card"><p class="note" style="margin:0">Shares open up as new horses join the barn. '
+        'Send us a note below and we will tell you what is available right now.</p></div>'
+    )
+    opts = "".join(f'<option>{esc(n.title())}</option>' for n, v in sorted(listed.items()) if v > 0)
+    email = (cfg.get("contact", {}).get("email") or "").strip()
+    phone = (cfg.get("contact", {}).get("phone") or "").strip()
+    reach = []
+    if phone:
+        reach.append(f'Call or text <a href="tel:{esc(phone)}">{esc(phone)}</a>')
+    if email:
+        reach.append(f'email <a href="mailto:{esc(email)}">{esc(email)}</a>')
+    steps = [
+        ("Pick a horse", "Browse the barn and pick the horse you want in on, or tell us your budget and we will suggest one."),
+        ("Choose your share", f"Own as little as {esc(min_share)}% or as much as is available. Your share sets your part of the costs and the purse money."),
+        ("Get licensed", "Owners need to be licensed to race. We walk you through the paperwork so it is quick and painless."),
+        ("Enjoy race day", "Follow every start, get updates from the barn, and join us in the winner's circle when your horse wins."),
+    ]
+    steps_html = "".join(
+        f'<div class="card own-step"><span>{i}</span><h3>{esc(t)}</h3><p>{d}</p></div>' for i, (t, d) in enumerate(steps, 1)
+    )
+    owners_css = (
+        '<style>.own-steps{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}'
+        '.own-step span{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--flame);'
+        'font:400 1.4rem/1 "Bebas Neue",Impact,sans-serif;margin-bottom:12px}.own-step h3{font-size:1.6rem;margin:0 0 6px}'
+        '.own-step p{margin:0;color:var(--mute);font-size:.94rem}.own-form{display:grid;gap:14px;grid-template-columns:1fr 1fr;max-width:760px}'
+        '.own-form label{display:grid;gap:6px;font:700 .68rem/1 Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}'
+        '.own-form .full{grid-column:1/-1}.own-form input,.own-form select,.own-form textarea{font:16px Inter,sans-serif;color:var(--text);'
+        'background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:12px}.own-form textarea{min-height:110px;resize:vertical}'
+        '.own-form input:focus,.own-form select:focus,.own-form textarea:focus{outline:none;border-color:var(--flame2)}'
+        '@media(max-width:620px){.own-form{grid-template-columns:1fr}}section[id]{scroll-margin-top:90px}</style>'
+    )
+    owners_js = (
+        "<script>(function(){var f=document.getElementById('own-form');if(!f)return;"
+        "var q=new URLSearchParams(location.search).get('horse');if(q){var s=f.horse;"
+        "for(var i=0;i<s.options.length;i++){if(s.options[i].text.toLowerCase()===q.toLowerCase()){s.selectedIndex=i;}}}"
+        "f.addEventListener('submit',function(e){e.preventDefault();var d=new FormData(f);"
+        "var body='Name: '+d.get('name')+'\\nEmail: '+d.get('email')+'\\nPhone: '+(d.get('phone')||'')+"
+        "'\\nHorse: '+d.get('horse')+'\\nShare size: '+(d.get('share')||'')+'\\n\\n'+(d.get('msg')||'');"
+        f"location.href='mailto:{email}?subject='+encodeURIComponent('Ownership inquiry: '+d.get('horse'))+'&body='+encodeURIComponent(body);"
+        "});})();</script>"
+    )
+    form_html = (
+        f'<form id="own-form" class="own-form card">'
+        '<label>Name<input name="name" required autocomplete="name"></label>'
+        '<label>Email<input name="email" type="email" required autocomplete="email"></label>'
+        '<label>Phone<input name="phone" type="tel" autocomplete="tel"></label>'
+        f'<label>Horse<select name="horse"><option>Any horse / not sure yet</option>{opts}</select></label>'
+        f'<label class="full">Share size you have in mind<input name="share" placeholder="e.g. {esc(min_share)}%, 10%, or a monthly budget"></label>'
+        '<label class="full">Questions<textarea name="msg" placeholder="Anything you want to know"></textarea></label>'
+        '<div class="full"><button class="btn" type="submit" style="border:0;cursor:pointer">Send inquiry</button>'
+        '<span class="note">Opens your email app with your details filled in.</span></div></form>'
+    ) if email else ""
+    owners_body = f"""
+<div class="page-head"><div class="wrap"><div class="eyebrow">Fractional racehorse ownership</div><h1>Become an <span class="grad">Owner</span></h1>
+<p class="tag" style="color:#d6d4cd;max-width:640px;margin:16px 0 24px">Own a piece of a Standardbred racing at The Meadows and Northfield Park, with shares starting at just {esc(min_share)}%. You get the race-day thrill without carrying a whole horse yourself.</p>
+<a class="btn" href="#available">See available shares</a><a class="btn alt" href="#inquire">Ask a question</a></div></div>
+<section><div class="wrap"><div class="eyebrow">How it works</div><h2>Four Steps to the Winner's Circle</h2>
+<p class="sub">Scott trains every horse himself, and the family runs the barn. Owners get straight answers and real updates.</p>
+<div class="own-steps">{steps_html}</div></div></section>
+<section class="alt"><div class="wrap cols"><div><div class="eyebrow">The numbers</div><h2>What It Costs</h2>
+<p class="sub" style="margin-bottom:0">Training is {money(rate_f) if rate_f else esc(rate)} a day per horse. Owners split the horse's costs and its purse earnings in proportion to their share, so a 10% owner pays 10% of the bills and collects 10% of what the horse earns.</p>
+{examples}</div>
+<div><div class="eyebrow">Good to know</div><h2>Why Own a Share</h2><div class="card"><p style="margin-top:0">&#10003; Shares as small as {esc(min_share)}%</p><p>&#10003; One trainer, hands-on with every horse</p><p>&#10003; Results and entries posted here automatically</p><p style="margin-bottom:0">&#10003; Racing at The Meadows and Northfield Park</p></div>
+<p class="note">Racing carries real risk. Purses are never guaranteed, and a horse can earn less than it costs to keep.</p></div></div></section>
+<section id="available"><div class="wrap"><div class="eyebrow">Open now</div><h2>Available Shares</h2>
+<p class="sub">Horses with shares open for purchase. The red ring shows how much of each horse is available.</p>{avail_html}</div></section>
+<section id="inquire" class="alt"><div class="wrap"><div class="eyebrow">Let's talk</div><h2>Get in Touch</h2>
+<p class="sub">Tell us what you are interested in and we will follow up with the details on that horse.{(" " + " or ".join(reach) + ".") if reach else ""}</p>
+{form_html}</div></section>{owners_js}"""
+    (out_p / "owners.html").write_text(page(cfg, "Become an Owner | " + cfg["name"], owners_body, "owners",
+        f"Own a share of a Scott Betts-trained Standardbred racehorse. Fractional shares from {min_share}%, training at ${rate}/day.", owners_css))
 
     mem = cfg.get("memoriam", {})
     ph = "".join(f"<p>{esc(p)}</p>" for p in cfg.get("phoenix", []))
