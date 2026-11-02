@@ -253,13 +253,15 @@ def merge(data, items, today):
 PURSE_RE = re.compile(r"(?i)purse\s*[:\-]?\s*\$\s*([\d,]+)")
 
 def parse_chart(text):
-    """Pull the purse and the race class/conditions line out of a chart page."""
+    """Pull the purse and race class out of a chart page.
+    Chart layout is label-on-one-line, value-on-the-next: 'Purse' / '$14,000', 'Class' / 'NW2PMLT5'."""
     purse, cls = None, None
-    m = PURSE_RE.search(text)
+    m = re.search(r"(?im)^purse\s*:?\s*\n?\s*\$\s*([\d,]+)", text) or PURSE_RE.search(text)
     if m:
         purse = int(m.group(1).replace(",", ""))
-        line = text[text.rfind("\n", 0, m.start()) + 1:text.find("\n", m.end()) if text.find("\n", m.end()) > 0 else None]
-        cls = PURSE_RE.sub("", line).strip(" .,;:-|") or None
+    c = re.search(r"(?m)^Class\s*:?\s*\n\s*(.+)$", text)
+    if c:
+        cls = c.group(1).strip()
     return purse, cls
 
 def fill_chart_details(data, max_fetch=60, sample_path=None):
@@ -267,7 +269,8 @@ def fill_chart_details(data, max_fetch=60, sample_path=None):
     fetched, found, sample = 0, 0, None
     for h in data["horses"]:
         for s in h.get("starts", []):
-            if "purse" in s or not s.get("chartUrl") or "scratch" in (s.get("finish") or "").lower():
+            done = "purse" in s and (s["purse"] is None or "raceClass" in s)
+            if done or not s.get("chartUrl") or "scratch" in (s.get("finish") or "").lower():
                 continue
             if fetched >= max_fetch:
                 break
@@ -288,8 +291,7 @@ def fill_chart_details(data, max_fetch=60, sample_path=None):
                 i = PURSE_RE.search(text).start()
                 sample = f"{h['name']} {s['date']} race {s['race']}\n{s['chartUrl']}\n\n{text[max(0, i - 2500):i + 3500]}"
             s["purse"] = purse
-            if cls:
-                s["raceClass"] = cls
+            s["raceClass"] = cls or ""
             if purse:
                 found += 1
     if sample and sample_path:
