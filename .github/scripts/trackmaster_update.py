@@ -24,6 +24,7 @@ import json
 import os
 import re
 import sys
+import urllib.request
 from zoneinfo import ZoneInfo
  
 TRAINER_PREFIX = "BETTS, SCOTT"
@@ -247,6 +248,53 @@ def merge(data, items, today):
     return notes
  
  
+# ------------------------------------------------------- chart details -----
+
+PURSE_RE = re.compile(r"(?i)purse\s*[:\-]?\s*\$\s*([\d,]+)")
+
+def parse_chart(text):
+    """Pull the purse and the race class/conditions line out of a chart page."""
+    purse, cls = None, None
+    m = PURSE_RE.search(text)
+    if m:
+        purse = int(m.group(1).replace(",", ""))
+        line = text[text.rfind("\n", 0, m.start()) + 1:text.find("\n", m.end()) if text.find("\n", m.end()) > 0 else None]
+        cls = PURSE_RE.sub("", line).strip(" .,;:-|") or None
+    return purse, cls
+
+def fill_chart_details(data, max_fetch=60, sample_path=None):
+    """Fetch each new start's TrackMaster chart once and store purse + race class."""
+    fetched, found, sample = 0, 0, None
+    for h in data["horses"]:
+        for s in h.get("starts", []):
+            if "purse" in s or not s.get("chartUrl") or "scratch" in (s.get("finish") or "").lower():
+                continue
+            if fetched >= max_fetch:
+                break
+            fetched += 1
+            try:
+                req = urllib.request.Request(s["chartUrl"], headers={"User-Agent": "Mozilla/5.0 (scott-betts-site updater)"})
+                with urllib.request.urlopen(req, timeout=20) as r:
+                    page = r.read().decode("utf-8", "replace")
+            except Exception as e:
+                print(f"chart fetch failed for {h['name']} {s['date']}: {e}")
+                continue
+            text = html_to_text(page)
+            if sample is None:
+                sample = f"{h['name']} {s['date']} race {s['race']}\n{s['chartUrl']}\n\n{text[:6000]}"
+            purse, cls = parse_chart(text)
+            s["purse"] = purse
+            if cls:
+                s["raceClass"] = cls
+            if purse:
+                found += 1
+    if sample and sample_path:
+        with open(sample_path, "w", encoding="utf-8") as f:
+            f.write(sample)
+    print(f"charts: fetched {fetched}, purse found in {found}")
+    return found
+
+
 # ---------------------------------------------------------------- main -----
  
 def main(argv):
@@ -272,6 +320,10 @@ def main(argv):
  
     today = os.environ.get("TODAY") or dt.datetime.now(ET).date().isoformat()
     notes = merge(data, items, today)
+    if "--no-charts" not in argv:
+        got = fill_chart_details(data, sample_path=os.path.join(os.path.dirname(path) or ".", "chart-sample.txt"))
+        if got:
+            notes.append(f"purses for {got} starts")
  
     new_raw = json.dumps(data, separators=(",", ":"), ensure_ascii=False)
     if new_raw != raw.rstrip("\n"):

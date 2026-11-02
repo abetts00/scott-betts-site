@@ -198,11 +198,13 @@ def media_html(cfg, name):
         f'{inner}<a class="sf-tag" href="owners.html?horse={quote(name.title())}#inquire">{esc(label)}</a></div>'
     )
 
+PAYOUT = {1: 0.50, 2: 0.25, 3: 0.12, 4: 0.08, 5: 0.05}
+
 KLERON_COLS = ["horse_name", "race_date", "track", "race_name", "finish_position", "earnings", "purse", "notes"]
 
 def kleron_csv(horses):
     """Every start for the barn in the Kleron races template (newest first).
-    Purse and earnings are not in the TrackMaster emails, so they stay blank."""
+    Purse comes from the TrackMaster chart; earnings = purse x 50/25/12/8/5 for 1st-5th."""
     rows = []
     for h in horses:
         for s in h.get("starts", []):
@@ -223,10 +225,17 @@ def kleron_csv(horses):
                     notes.append(f"Time: {t}")
                 if s.get("odds"):
                     notes.append(f"Odds: {s['odds']}-1")
+            purse = s.get("purse")
+            pl = None if scr else place(fin)
+            earn = ""
+            if purse and not scr:
+                earn = round(purse * PAYOUT.get(pl, 0))
+            rname = f"Race {s['race']}" if s.get("race") not in (None, "") else ""
+            if s.get("raceClass"):
+                rname = f"{rname} - {s['raceClass']}" if rname else s["raceClass"]
             rows.append([
                 string.capwords(h["name"].lower()), s.get("date", ""), s.get("track", ""),
-                f"Race {s['race']}" if s.get("race") not in (None, "") else "",
-                "" if scr else (place(fin) or fin), "", "", "; ".join(notes),
+                rname, "" if scr else (pl or fin), earn, purse or "", "; ".join(notes),
             ])
     rows.sort(key=lambda r: (r[1], r[0]), reverse=True)
     buf = io.StringIO()
