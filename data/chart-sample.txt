@@ -1,204 +1,240 @@
-AHTOHALLAN 2026-10-09 race 14
-http://www.trackmaster.com/cgi-bin/hchxml2html.cgi?track=MEA&date=20261009&race=14&cardid=5&key=937ade15ae9ee7146d2a44675d3e8ea0&source=stable
+READY SET GOO 2026-10-31 race 4
+http://www.trackmaster.com/cgi-bin/hchxml2html.cgi?track=WDSTK&date=20261031&race=4&cardid=5&key=cb3c284a54ba9524fb14cbcdee11166a&source=stable
 
-Expired Chart Link
-Back
-Back
-Sign In
-Sign In To My Account
-Register New Account
-Home
-Thoroughbred Racing
-Past Performances
-Past Performances
-Platinum Past Performances
-STATS Race Lens
-Advanced Handicapping
-STATS Race Lens
-TrackMaster Plus Pro
-EquiGraphix
-MPH Pro
-RDSS
-WagerMate
-Advanced Reports
-Performance Cycles
-TRIPS Reports
-On-Target Performance Ratings
-Beginner Reports
-STATS True Odds
-Flashnet
-Performance Cycles Lite
-Selections
-Winner's Circle Selections
-F.A.S.T. Sheets
-Valuline
-CompuBet
-PowerPicks
-Data Files
-TrackMaster Plus
-TrackMaster Basic
-TrackMaster PPs
-Results/Replays
-Results Charts
-Race Replays
-Mobile/Tablet Apps
-Pocket/Tablet Handicapper
-Pocket Handicapper Suite
-iPPs By Equibase
-3rd Party Software
-All Products
-Harness Racing
-Race Programs
-Past Performances
-Platinum Past Performances
-Pace Past Performances
-Advanced Handicapping
-HarnessPro
-Lifetime Past Performances
-Virtual Stable Plus
-Beginner Handicapping
-Flashnet
-Selections
-Winner's Circle Selections
-F.A.S.T. Sheets
-TrackMaster Greg
-CompuBet
-CompuBet Pro
-PowerPicks
-Data Files
-TrackMaster Plus
-TrackMaster Basic
-TrackMaster PPs
-Results/Replays
-Results Charts
-Race Replays
-Mobile/Tablet Apps
-Pocket/Tablet Handicapper
-Pocket Handicapper Suite
-iPPs By Equibase
-3rd Party Software
-All Products
-Free Stuff
-TrackMaster Players Club
-TrackMaster on Facebook
-TrackMaster on Twitter
-Harness Entries
-Harness Results
-Harness Virtual Stable
-Support
-Contact Us
-Terms Of Service
-Remote Support
-Sign In
-Sign In To My Account
-Register New Account
-Thoroughbred Racing
-Past Performances
-Past Performances
-Platinum Past Performances
-STATS Race Lens
-Advanced Handicapping
-STATS Race Lens
-TrackMaster Plus Pro
-EquiGraphix
-MPH Pro
-RDSS
-WagerMate
-Advanced Reports
-Performance Cycles
-TRIPS Reports
-On-Target Performance Ratings
-Beginner Reports
-STATS True Odds
-Flashnet
-Performance Cycles Lite
-Selections
-Winner's Circle Selections
-F.A.S.T. Sheets
-Valuline
-Compubet
-PowerPicks
-Data Files
-TrackMaster Plus
-TrackMaster Basic
-TrackMaster PPs
-Results/Replays
-Results Charts
-Race Replays
-Mobile/Tablet Apps
-Pocket/Tablet Handicapper
-Pocket Handicapper Suite
-iPPs By Equibase
-3rd Party Software
-All Products
-Harness Racing
-Race Programs
-Past Performances
-Platinum Past Performances
-Pace Past Performances
-Advanced Handicapping
-HarnessPro
-Lifetime Past Performances
-Virtual Stable Plus
-Beginner Handicapping
-Flashnet
-Selections
-Winner's Circle Selections
-F.A.S.T. Sheets
-TrackMaster Greg
-CompuBet
-CompuBet Pro
-PowerPicks
-Data Files
-TrackMaster Plus
-TrackMaster Basic
-TrackMaster PPs
-Results/Replays
-Results Charts
-Race Replays
-Mobile/Tablet Apps
-Pocket/Tablet Handicapper
-Pocket Handicapper Suite
-iPPs By Equibase
-3rd Party Software
-All Products
-Free Stuff
-TrackMaster Players Club
-TrackMaster on Facebook
-TrackMaster on Twitter
-Harness Entries
-Harness Results
-Harness Virtual Stable
-Support
-Contact Us
-Terms Of Service
-Remote Support
-Sign In
-Sign In To My Account
-Register New Account
-Expired Chart Link
-HomeExpired Chart Link
-Charts are only available from the Virtual Stable Result notifications for 8 days.
-Click here if you wish to acquire more charts
-Home
-Contact
-About
-Terms
-Privacy
-Advertising
--->
-Proprietary to and copyright 2026 AXCIS Information Network, Inc. All rights reserved. Republication or re-dissemination of the contents of this screen are expressly prohibited without the written consent of AXCIS Information Network, Inc. Use (including viewing) of the material contained herein constitutes acceptance of these terms. TrackMaster is a registered trademark of AXCIS Information Network, Inc.
-Home
-Contact
-About
-Terms
-Privacy
-Advertising
--->
-Sign In
-Username
-Password
-Remember me on this computer
--->
-Forgot password? Request it here!
-Don't have an account? Register now!
+Race #4 at Shenandoah Downs on October 31st, 2026
+Shenandoah Downs - October 31st, 2026 - Race #4 - Early Betting
+No video replay for this race available
+Distance
+1 mile
+Gait
+Trot
+Purse
+$110,500
+Class
+BRFD2YFT-F
+CR
+57
+Off Time
+2:05 PM
+Condition
+Fast
+Temp
+62
+Variant
+-4
+P#
+Horse
+PP
+1/4
+1/2
+3/4
+Str
+Finish
+Time
+FF
+Odds
+Med
+Eq
+Driver
+Trainer
+Comment
+Claim Price
+Speed
+Pace 1
+Pace 2
+Pace 3
+Pace 4
+6
+Dance With Jenni
+6
+1-1½
+1-1½
+1-1¾
+1-1½
+1-1¼
+2:00.4
+30.1
+8.10
+†
+Carter, William
+Whitaker, Michael
+62
+65
+54
+62
+67
+4
+Queen Jessica
+4
+2-1½
+2-1½
+2-1¾
+2-1½
+2-1¼
+2:01.0
+30.0
+24.90
+L
+Davis, Eric
+Whitaker, Michael
+61
+59
+54
+61
+70
+3
+Aren't I Pretty
+3
+4-9
+4-6½
+3-4¾
+3-4
+3-3½
+2:01.2
+30.0
+10.30
+†
+Morgan, Anthony
+Wisher, Adrian Jr
+59
+30
+64
+70
+73
+8
+Ready Set Goo
+8
+3-4
+3-3½
+x6-15½°
+4-11
+4-6¼
+2:02.0
+28.2
+*0.40
+Betts, Scott
+Betts, Scott
+55
+49
+55
+14
+103
+2
+Vee Gee
+2
+5-14
+5-12
+5-11½
+5-11
+5-10¼
+2:02.4
+30.0
+28.10
+†
+Paquet, Fernand Jr
+Lafreniere, Elisha
+53
+10
+63
+65
+73
+5
+K J Wow
+5x
+6-19
+7-17
+7-17¼
+7-16¾
+6-16¾
+2:04.1
+30.0
+16.70
+Vincent, Justin
+Chansky, Daniel
+46
+62
+62
+70
+1
+Pj's Lovin
+1
+xip7-23
+6-14½
+4-10¾°
+6-16
+7-17
+2:04.1
+31.2
+5.30
+Braden, Corey
+Hagerman, Herman
+45
+88
+77
+43
+7
+Sweetbuterflykises
+7
+x8-29
+8-19½
+8-18¼
+8-28¾
+8-45¾
+2:10.0
+35.3
+32.30
+†
+Buford, Archie
+Brown, Betsy
+17
+92
+67
+1st Call
+2nd Call
+3rd Call
+Finish
+1st Frac
+2nd Frac
+3rd Frac
+Final Frac
+Race Times
+30.0
+1:00.3
+1:30.3
+2:00.4
+Splits
+30.0
+30.3
+30.0
+30.1
+Winner
+#6 Dance With Jenni (2, M, Armed Dangerously - Will You Dance - Possess The Will)
+Scratches
+None
+P#
+Horse
+Win
+Place
+Show
+6
+Dance With Jenni
+18.20
+7.60
+4
+Queen Jessica
+17.00
+3
+Aren't I Pretty
+WPS Pool $815
+Wager
+Payoff
+Pool
+$1 Exacta
+(6/4 $47.80)
+$921
+.50 Trifecta
+(6/4/3 $572.65)
+$734
+.10 Superfecta
+(6/4/3/1-8 $84.26)
+$540
