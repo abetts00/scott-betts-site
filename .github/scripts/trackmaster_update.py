@@ -280,9 +280,13 @@ def fill_chart_details(data, max_fetch=60, sample_path=None):
                 print(f"chart fetch failed for {h['name']} {s['date']}: {e}")
                 continue
             text = html_to_text(page)
-            if sample is None:
-                sample = f"{h['name']} {s['date']} race {s['race']}\n{s['chartUrl']}\n\n{text[:6000]}"
+            if "expired chart link" in text.lower():
+                s["purse"] = None  # TrackMaster links expire; nothing to read
+                continue
             purse, cls = parse_chart(text)
+            if sample is None and purse:
+                i = PURSE_RE.search(text).start()
+                sample = f"{h['name']} {s['date']} race {s['race']}\n{s['chartUrl']}\n\n{text[max(0, i - 2500):i + 3500]}"
             s["purse"] = purse
             if cls:
                 s["raceClass"] = cls
