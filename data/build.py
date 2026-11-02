@@ -5,8 +5,11 @@ Usage: python3 build.py <data.json> <config.json> <output_dir>
 Pages: index, horses, racing (entries + results + replays), about, memoriam;
 redirects: entries, results, replays -> racing sections, phoenix -> memoriam
 """
+import csv
 import html
+import io
 import json
+import string
 import re
 import sys
 from urllib.parse import quote
@@ -195,6 +198,43 @@ def media_html(cfg, name):
         f'{inner}<a class="sf-tag" href="owners.html?horse={quote(name.title())}#inquire">{esc(label)}</a></div>'
     )
 
+KLERON_COLS = ["horse_name", "race_date", "track", "race_name", "finish_position", "earnings", "purse", "notes"]
+
+def kleron_csv(horses):
+    """Every start for the barn in the Kleron races template (newest first).
+    Purse and earnings are not in the TrackMaster emails, so they stay blank."""
+    rows = []
+    for h in horses:
+        for s in h.get("starts", []):
+            fin = s.get("finish") or ""
+            scr = is_scratch(fin)
+            notes = []
+            if scr:
+                notes.append("Scratched")
+            else:
+                d = s.get("driver")
+                if d and "," in d:
+                    ln, fn_ = [x.strip() for x in d.split(",", 1)]
+                    d = f"{fn_} {ln}"
+                if d:
+                    notes.append(f"Driver: {d}")
+                t = final_time(s.get("time"))
+                if t:
+                    notes.append(f"Time: {t}")
+                if s.get("odds"):
+                    notes.append(f"Odds: {s['odds']}-1")
+            rows.append([
+                string.capwords(h["name"].lower()), s.get("date", ""), s.get("track", ""),
+                f"Race {s['race']}" if s.get("race") not in (None, "") else "",
+                "" if scr else (place(fin) or fin), "", "", "; ".join(notes),
+            ])
+    rows.sort(key=lambda r: (r[1], r[0]), reverse=True)
+    buf = io.StringIO()
+    w = csv.writer(buf, lineterminator="\n")
+    w.writerow(KLERON_COLS)
+    w.writerows(rows)
+    return buf.getvalue(), len(rows)
+
 def main():
     data_p, cfg_p, out_p = map(Path, sys.argv[1:4])
     data = json.loads(data_p.read_text())
@@ -203,6 +243,8 @@ def main():
     out_p.mkdir(parents=True, exist_ok=True)
 
     horses = data.get("horses", [])
+    k_text, k_n = kleron_csv(horses)
+    (data_p.parent / "kleron-races.csv").write_text(k_text)
     former = {n.upper() for n in cfg.get("formerHorses", [])}
     window = int(cfg.get("currentWithinDays", 90))
     today = date.today()
