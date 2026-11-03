@@ -1,27 +1,27 @@
-ELLA JO 2026-11-01 race 12
-http://www.trackmaster.com/cgi-bin/hchxml2html.cgi?track=NFLD&date=20261101&race=12&cardid=6&key=0a8dfeab47851061557abd1388e0941e&source=stable
+REDWHITE N GOO 2026-11-02 race 12
+http://www.trackmaster.com/cgi-bin/hchxml2html.cgi?track=NFLD&date=20261102&race=12&cardid=6&key=9234232442962e855539409cccaa65e8&source=stable
 
-Race #12 at Northfield Park on November 1st, 2026
-Northfield Park - November 1st, 2026 - Race #12 - Late Betting
+Race #12 at Northfield Park on November 2nd, 2026
+Northfield Park - November 2nd, 2026 - Race #12 - Late Betting
 Purchase the video replay of this race (TrackMaster Race Replays account required)
 Distance
 1 mile
 Gait
-Pace
+Trot
 Purse
-$14,000
+$20,500
 Class
-FMNW6500L4
+OPEN HCP
 CR
-86
+92
 Off Time
-10:27 PM
+10:31 PM
 Condition
 Fast
 Temp
-56
+60
 Variant
--4
+-5
 P#
 Horse
 PP
@@ -44,181 +44,154 @@ Pace 1
 Pace 2
 Pace 3
 Pace 4
-4
-Allsmokeandmirrors
-4
-5-5½
-5-4½
-4-3
-4-3
-1-1¼
-1:53.0
-29.1
-16.20
-L
-Irvine, Justin
-Mcdonough, Shawn
-85
-90
-75
-94
-82
-2
-Lady Rita
-2
-1-1¼
-2-¾
-1-¼
-1-1
-2-1¼
-1:53.1
-30.0
-*0.70
-L
-Rhoades, Braiden
-Schillaci, Samuel
-84
-112
-68
-91
-65
-5
-Goodnight Dance
-5
-6-7¼
-6-7½
-6-5
-5-4½
-3-1¾
-1:53.2
-29.1
-50.50
-L
-Smith, Tyler
-Miller, Edward
-$58,000
-83
-83
-70
-98
-83
-1
-Ella Jo
-1
-2-1¼
-3-2½
-3-1½
-3-2
-4-2
-1:53.2
-29.4
-27.40
-L
-Farmer, Wyatt
-Betts, Scott
-$58,000
-83
-107
-66
-92
-68
-6
-Splash Of Pink
-6
-7-9¼
-7-9¾
-7-6°
-7-4¾
-5-2½
-1:53.2
-29.0
-20.50
-L
-Merriman, Aaron
-Kreiser, Cory
-$27,000
-84
-76
-70
-104
-85
-3
-Fox Valley Lava
-3
-4-4
-4-2½°
-5-3¼°
-6-4½
-6-4¼
-1:53.4
-30.0
-3.30
-L
-Noble, Daniel
-Deyermand, Cory
-82
-96
-78
-86
-67
-7
-Tiffany Blue
-7
-8-10¾
-8-11¼
-8-8½
-8-7¼
-7-5½
-1:54.0
-29.1
-36.50
-Ebersole, Logan
-Oliverio, John
-$58,000
-82
-71
-71
-102
-85
 9
-Downthejerseyshore
+Abbey D
 [9
-3-2½
-1-¾°
-2-¼°
-2-1
-8-6¾
-1:54.2
-31.0
-3.50
+5-7
+4-3°
+4-1¾°
+1-ns
+1-3¼
+1:55.0
+30.0
+*1.40
 L
-Angus, Tyler
-Presto, Brandon
-$32,625
-80
+†
+Noble, Daniel
+Swartz, Deborah
+91
 103
-82
-89
-45
-8
-Tequila Time
-8
-9-12¾
-9-13¾
-9-10½
-9-9¼
-9-7¼
-1:54.2
-29.1
-95.60
-Ciocca, John Jr
-Roegner, Jessica
-$58,000
-81
-63
-69
-105
+88
+96
+79
+6
+Best Met Yet
+5
+4-5½
+2-1°
+1-ns°
+2-ns
+2-3¼
+1:55.3
+31.0
+1.80
+Merriman, Aaron
+Burke, Ronald
 86
+107
+88
+93
+58
+3
+Windsong Patriot
+3
+2-1½
+3-2
+3-1¾
+4-1¼
+3-3¼
+1:55.3
+30.3
+59.00
+L
+Sugg, Kurt
+O'DOnnell, Melanie
+87
+123
+69
+91
+66
+4
+Don't Take My Keys
+4
+1-1½
+1-1
+2-ns
+3-hd
+4-4¼
+1:55.4
+31.1
+5.00
+†
+Smith, Tyler
+Stahl, Ryan
+85
+128
+70
+89
+54
+8
+Disgruntled Carl
+7
+7-11
+7-5¼
+7-4½
+6-3¼
+5-4½
+1:55.4
+30.2
+4.20
+L
+†
+Irvine, Justin
+Schillaci, Samuel
+88
+87
+96
+95
+73
+1
+All Champy
+1
+3-4
+5-4
+5-3¼
+7-3¼
+6-4¾
+1:56.0
+30.3
+40.60
+L
+Kreiser, Cory
+Plested, Kathleen
+85
+113
+70
+92
+65
+7
+Redwhite N Goo
+6
+6-9
+6-4¾°
+6-3¾°
+5-2¾
+7-5
+1:56.0
+30.3
+34.10
+L
+†
+Miller, Emanuel
+Betts, Scott
+86
+94
+88
+94
+67
+2
+Papa Doc
+x2x
+x8-ds
+8-ds
+8-ds
+8-ds
+8-ds
+27.30
+L
+†
+Hershberger, Crist
+Hershberger, Crist
 1st Call
 2nd Call
 3rd Call
@@ -229,45 +202,45 @@ Finish
 Final Frac
 Race Times
 26.3
-55.3
-1:23.1
-1:53.0
+56.2
+1:24.3
+1:55.0
 Splits
 26.3
-29.0
-27.3
 29.4
+28.1
+30.2
 Winner
-#4 Allsmokeandmirrors (5, M, Betterthancheddar - Duchess Dolly - Shadow Play)
+#9 Abbey D (7, M, Uncle Peter - B V's Sister - Big Victory)
 Scratches
-None
+#5 Sugar Instead (Sick)
 P#
 Horse
 Win
 Place
 Show
-4
-Allsmokeandmirrors
-34.40
-9.20
-5.40
-2
-Lady Rita
-2.20
-2.10
-5
-Goodnight Dance
-10.60
-WPS Pool $15,557
+9
+Abbey D
+4.80
+3.00
+3.60
+6
+Best Met Yet
+3.20
+3.60
+3
+Windsong Patriot
+12.20
+WPS Pool $12,568
 Wager
 Payoff
 Pool
 Exacta
-(4/2 $43.60)
-$13,378
+(9/6 $8.40)
+$10,273
 Trifecta
-(4/2/5 $409.00)
-$17,451
+(9/6/3 $127.40)
+$10,194
 20 Cent Superfecta
-(4/2/5/1 $472.06)
-$13,849
+(9/6/3/4 $65.30)
+$9,882
