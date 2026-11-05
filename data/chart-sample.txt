@@ -1,27 +1,27 @@
-REDWHITE N GOO 2026-11-02 race 12
-http://www.trackmaster.com/cgi-bin/hchxml2html.cgi?track=NFLD&date=20261102&race=12&cardid=6&key=9234232442962e855539409cccaa65e8&source=stable
+PUNCHIN PREACHER 2026-11-04 race 1
+http://www.trackmaster.com/cgi-bin/hchxml2html.cgi?track=MEA&date=20261104&race=1&cardid=5&key=ec3926f329064cba2b7cf438a4f0f29e&source=stable
 
-Race #12 at Northfield Park on November 2nd, 2026
-Northfield Park - November 2nd, 2026 - Race #12 - Late Betting
-Purchase the video replay of this race (TrackMaster Race Replays account required)
+Race #1 at The Meadows on November 4th, 2026
+The Meadows - November 4th, 2026 - Race #1 - Early Betting
+No video replay for this race available
 Distance
 1 mile
 Gait
 Trot
 Purse
-$20,500
+$7,100
 Class
-OPEN HCP
+CDCLMNW2
 CR
-92
+69
 Off Time
-10:31 PM
+12:53 PM
 Condition
 Fast
 Temp
-60
+77
 Variant
--5
+-4
 P#
 Horse
 PP
@@ -44,154 +44,168 @@ Pace 1
 Pace 2
 Pace 3
 Pace 4
-9
-Abbey D
-[9
-5-7
-4-3°
-4-1¾°
+6
+Felicia Ofsullivan
+6
+8-10
+8-5½°
+3-1½
+2-1
 1-ns
-1-3¼
 1:55.0
-30.0
-*1.40
+29.2
+3.20
 L
 †
-Noble, Daniel
-Swartz, Deborah
-91
-103
-88
-96
-79
-6
-Best Met Yet
-5
-4-5½
-2-1°
-1-ns°
-2-ns
-2-3¼
-1:55.3
-31.0
-1.80
 Merriman, Aaron
-Burke, Ronald
-86
-107
-88
-93
-58
-3
-Windsong Patriot
-3
-2-1½
-3-2
-3-1¾
-4-1¼
-3-3¼
-1:55.3
-30.3
-59.00
-L
-Sugg, Kurt
-O'DOnnell, Melanie
-87
-123
-69
-91
-66
-4
-Don't Take My Keys
-4
-1-1½
+Twaddle, Timothy
+$22,950
+80
+64
+100
+82
+72
+2
+High Range
+2
+5-5½
+5-3°
+1-½°
 1-1
 2-ns
-3-hd
-4-4¼
-1:55.4
-31.1
-5.00
+1:55.0
+29.4
+*0.70
 †
-Smith, Tyler
-Stahl, Ryan
-85
-128
-70
-89
-54
-8
-Disgruntled Carl
-7
-7-11
-7-5¼
-7-4½
-6-3¼
-5-4½
-1:55.4
-30.2
-4.20
-L
-†
-Irvine, Justin
-Schillaci, Samuel
-88
-87
-96
-95
-73
-1
-All Champy
-1
-3-4
-5-4
-5-3¼
-7-3¼
-6-4¾
-1:56.0
-30.3
-40.60
-L
-Kreiser, Cory
-Plested, Kathleen
-85
-113
-70
+Wrenn, Ronnie Jr
+Burke, Ronald
+$20,250
+79
+81
 92
+78
 65
-7
-Redwhite N Goo
-6
-6-9
-6-4¾°
-6-3¾°
-5-2¾
+4
+Punchin Preacher
+4
+7-8½
 7-5
+6-4½
+4-3
+3-2¾
+1:55.3
+29.2
+8.70
+L
+†
+Bateson, Case
+Betts, Scott
+$20,250
+76
+69
+95
+67
+72
+7
+Jose Labelle
+7
+2-1½
+2-1
+4-2½
+3-2½
+4-3
+1:55.3
+29.4
+43.30
+†
+Yoder, Wilbur
+Yoder, Wilbur
+$20,250
+77
+98
+84
+60
+64
+5
+Gq Hanover
+5
+1-1½
+1-1
+2-½
+5-4
+5-5
 1:56.0
 30.3
-34.10
+25.80
 L
 †
-Miller, Emanuel
-Betts, Scott
-86
-94
-88
-94
+Zendt, Brian
+Zendt, William
+$16,875
+74
+102
+81
+63
+47
+1
+Pixie Stardust
+1
+4-4
+4-2½
+7-5½
+6-10
+6-12¼
+1:57.2
+31.1
+20.40
+†
+Brown, Brady
+Schoeffel, Stephen
+$22,950
 67
-2
-Papa Doc
-x2x
-x8-ds
-8-ds
-8-ds
-8-ds
-8-ds
-27.30
+87
+87
+54
+38
+3
+Willscreek
+3
+6-7
+6-4
+8-6½
+7-12
+7-14¾
+1:58.0
+31.2
+58.90
 L
-†
-Hershberger, Crist
-Hershberger, Crist
+Johnston, Shawn
+Mullett, Justin
+$16,875
+64
+75
+94
+56
+33
+8
+Dan's Dandy
+8
+3-2½°
+3-1½°
+5-3½°
+8xip-15
+8-19¾
+1:59.0
+33.0
+4.30
+L
+Irvine, Justin
+Pirillo, Justin
+$16,875
+61
+95
+88
+59
 1st Call
 2nd Call
 3rd Call
@@ -201,46 +215,46 @@ Finish
 3rd Frac
 Final Frac
 Race Times
-26.3
+27.2
 56.2
-1:24.3
+1:25.1
 1:55.0
 Splits
-26.3
+27.2
+29.0
+28.4
 29.4
-28.1
-30.2
 Winner
-#9 Abbey D (7, M, Uncle Peter - B V's Sister - Big Victory)
+#6 Felicia Ofsullivan (3, M, Southwind Chrome - Seducedbychocolate - Chocolatier)
 Scratches
-#5 Sugar Instead (Sick)
+None
 P#
 Horse
 Win
 Place
 Show
-9
-Abbey D
-4.80
-3.00
-3.60
 6
-Best Met Yet
-3.20
+Felicia Ofsullivan
+8.40
 3.60
-3
-Windsong Patriot
-12.20
-WPS Pool $12,568
+2.40
+2
+High Range
+2.20
+2.10
+4
+Punchin Preacher
+3.60
+WPS Pool $6,796
 Wager
 Payoff
 Pool
 Exacta
-(9/6 $8.40)
-$10,273
+(6/2 $17.40)
+$7,152
 Trifecta
-(9/6/3 $127.40)
-$10,194
+(6/2/4 $131.80)
+$5,666
 20 Cent Superfecta
-(9/6/3/4 $65.30)
-$9,882
+(6/2/4/7 $78.14)
+$3,806
