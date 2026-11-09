@@ -1,27 +1,27 @@
-PUNCHIN PREACHER 2026-11-04 race 1
-http://www.trackmaster.com/cgi-bin/hchxml2html.cgi?track=MEA&date=20261104&race=1&cardid=5&key=ec3926f329064cba2b7cf438a4f0f29e&source=stable
+ELLA JO 2026-11-08 race 14
+http://www.trackmaster.com/cgi-bin/hchxml2html.cgi?track=NFLD&date=20261108&race=14&cardid=6&key=02586f4d49342a027f07894890cc3c46&source=stable
 
-Race #1 at The Meadows on November 4th, 2026
-The Meadows - November 4th, 2026 - Race #1 - Early Betting
-No video replay for this race available
+Race #14 at Northfield Park on November 8th, 2026
+Northfield Park - November 8th, 2026 - Race #14 - Late Betting
+Purchase the video replay of this race (TrackMaster Race Replays account required)
 Distance
 1 mile
 Gait
-Trot
+Pace
 Purse
-$7,100
+$14,000
 Class
-CDCLMNW2
+FM22500CLO
 CR
-69
+84
 Off Time
-12:53 PM
+11:02 PM
 Condition
 Fast
 Temp
-77
+49
 Variant
--4
+-3
 P#
 Horse
 PP
@@ -44,168 +44,179 @@ Pace 1
 Pace 2
 Pace 3
 Pace 4
-6
-Felicia Ofsullivan
-6
-8-10
-8-5½°
-3-1½
-2-1
-1-ns
-1:55.0
-29.2
-3.20
+2
+Downthejerseyshore
+2
+1-1°
+1-2¼
+1-2¾
+1-2½
+1-2½
+1:54.3
+29.1
+*1.00
 L
-†
-Merriman, Aaron
-Twaddle, Timothy
-$22,950
-80
-64
-100
-82
-72
-2
-High Range
-2
-5-5½
-5-3°
-1-½°
-1-1
-2-ns
-1:55.0
-29.4
-*0.70
-†
-Wrenn, Ronnie Jr
-Burke, Ronald
-$20,250
-79
-81
-92
+Angus, Tyler
+Presto, Brandon
+$32,625
 78
-65
-4
-Punchin Preacher
-4
-7-8½
-7-5
-6-4½
-4-3
-3-2¾
-1:55.3
-29.2
-8.70
-L
-†
-Bateson, Case
-Betts, Scott
-$20,250
+85
 76
 69
-95
-67
+83
+1
+Mollys Ace N
+1
+3-2¼
+3-3½
+2-2¾
+2-2½
+2-2½
+1:55.0
+29.1
+7.20
+L
+Noble, Daniel
+Deyermand, Cory
+76
+76
+71
 72
-7
-Jose Labelle
-7
-2-1½
-2-1
-4-2½
-3-2½
-4-3
-1:55.3
-29.4
-43.30
-†
-Yoder, Wilbur
-Yoder, Wilbur
-$20,250
-77
-98
 84
-60
-64
-5
-Gq Hanover
-5
-1-1½
-1-1
-2-½
-5-4
-5-5
-1:56.0
-30.3
-25.80
-L
-†
-Zendt, Brian
-Zendt, William
-$16,875
-74
-102
-81
-63
-47
-1
-Pixie Stardust
-1
-4-4
-4-2½
-7-5½
-6-10
-6-12¼
-1:57.2
-31.1
-20.40
-†
-Brown, Brady
-Schoeffel, Stephen
-$22,950
+9
+Tequila Time
+[9
+5-4¾
+5-5¾°
+3-5¾°
+3-5
+3-3¾
+1:55.2
+28.4
+25.30
+Ciocca, John Jr
+Roegner, Jessica
+76
 67
-87
-87
-54
-38
-3
-Willscreek
-3
+73
+70
+93
+5
+Goodnight Dance
+5
+6-6¾
 6-7
-6-4
-8-6½
-7-12
-7-14¾
-1:58.0
-31.2
-58.90
+5-9°
+4-7¼
+4-5
+1:55.3
+28.2
+11.80
 L
-Johnston, Shawn
-Mullett, Justin
-$16,875
-64
+Sugg, Kurt
+Miller, Edward
+$58,000
+73
+58
 75
-94
-56
-33
+61
+99
+4
+Tiffany Blue
+4
+4-3½
+4-4¾
+4-9
+ip5-7¼
+5-5¼
+1:55.3
+28.2
+24.00
+Widger, Samuel
+Oliverio, John
+$58,000
+73
+71
+71
+52
+98
+6
+Ella Jo
+6
+7-8¼
+7-9
+7-11½°
+6-9¼
+6-6¼
+1:55.4
+28.1
+34.60
+L
+Macdonald, Anthony
+Betts, Scott
+$58,000
+73
+52
+74
+60
+105
+7
+Heart Song
+7
+8-10
+9-12½°
+8-13°
+8-12¼
+7-7½
+1:56.0
+28.0
+11.00
+L
+Smith, Tyler
+Plested, Kathleen
+73
+46
+68
+69
+108
 8
-Dan's Dandy
+Jumpingjoy N
 8
-3-2½°
-3-1½°
-5-3½°
-8xip-15
-8-19¾
-1:59.0
-33.0
-4.30
+9-11½
+8-11½
+6-10½
+7-11¼
+8-9¾
+1:56.3
+29.0
+37.80
 L
 Irvine, Justin
-Pirillo, Justin
-$16,875
-61
-95
-88
-59
+Schillaci, Samuel
+71
+40
+79
+76
+89
+3
+Splash Of Pink
+3
+2-1
+2-2¼
+ip9-15
+9-30¼
+9-57
+2:06.0
+37.3
+2.00
+L
+Merriman, Aaron
+Kreiser, Cory
+$27,000
+22
+81
+71
+19
 1st Call
 2nd Call
 3rd Call
@@ -215,17 +226,17 @@ Finish
 3rd Frac
 Final Frac
 Race Times
-27.2
-56.2
-1:25.1
-1:55.0
+28.0
+56.4
+1:25.2
+1:54.3
 Splits
-27.2
-29.0
+28.0
 28.4
-29.4
+28.3
+29.1
 Winner
-#6 Felicia Ofsullivan (3, M, Southwind Chrome - Seducedbychocolate - Chocolatier)
+#2 Downthejerseyshore (4, M, Downbytheseaside - Gravity - Dragon Again)
 Scratches
 None
 P#
@@ -233,28 +244,34 @@ Horse
 Win
 Place
 Show
-6
-Felicia Ofsullivan
-8.40
-3.60
-2.40
 2
-High Range
-2.20
-2.10
-4
-Punchin Preacher
-3.60
-WPS Pool $6,796
+Downthejerseyshore
+4.00
+3.20
+2.40
+1
+Mollys Ace N
+6.80
+4.20
+9
+Tequila Time
+9.20
+WPS Pool $11,323
 Wager
 Payoff
 Pool
 Exacta
-(6/2 $17.40)
-$7,152
+(2/1 $6.40)
+$11,532
 Trifecta
-(6/2/4 $131.80)
-$5,666
+(2/1/9 $30.60)
+$12,395
 20 Cent Superfecta
-(6/2/4/7 $78.14)
-$3,806
+(2/1/9/5 $29.64)
+$9,008
+Pick Three-Pick 3
+(1/1/2 $22.30)
+$5,328
+Pick Four-Pick 4
+(3/1/1/2 $65.70)
+$16,339
