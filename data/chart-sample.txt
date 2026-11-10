@@ -1,25 +1,25 @@
-ELLA JO 2026-11-08 race 14
-http://www.trackmaster.com/cgi-bin/hchxml2html.cgi?track=NFLD&date=20261108&race=14&cardid=6&key=02586f4d49342a027f07894890cc3c46&source=stable
+LOOKS LIKE MONI 2026-11-09 race 14
+http://www.trackmaster.com/cgi-bin/hchxml2html.cgi?track=NFLD&date=20261109&race=14&cardid=6&key=d3251a0b61af561b47c9c2e811aa74d6&source=stable
 
-Race #14 at Northfield Park on November 8th, 2026
-Northfield Park - November 8th, 2026 - Race #14 - Late Betting
+Race #14 at Northfield Park on November 9th, 2026
+Northfield Park - November 9th, 2026 - Race #14 - Late Betting
 Purchase the video replay of this race (TrackMaster Race Replays account required)
 Distance
 1 mile
 Gait
-Pace
+Trot
 Purse
 $14,000
 Class
-FM22500CLO
+NW6500L4
 CR
-84
+88
 Off Time
-11:02 PM
+10:51 PM
 Condition
 Fast
 Temp
-49
+41
 Variant
 -3
 P#
@@ -44,179 +44,163 @@ Pace 1
 Pace 2
 Pace 3
 Pace 4
-2
-Downthejerseyshore
-2
-1-1°
+3
+Looks Like Moni
+3
+1-¼°
 1-2¼
-1-2¾
-1-2½
-1-2½
-1:54.3
-29.1
-*1.00
-L
-Angus, Tyler
-Presto, Brandon
-$32,625
-78
-85
-76
-69
-83
-1
-Mollys Ace N
-1
-3-2¼
-3-3½
-2-2¾
-2-2½
-2-2½
-1:55.0
-29.1
-7.20
-L
-Noble, Daniel
-Deyermand, Cory
-76
-76
-71
-72
-84
-9
-Tequila Time
-[9
-5-4¾
-5-5¾°
-3-5¾°
-3-5
-3-3¾
-1:55.2
-28.4
-25.30
-Ciocca, John Jr
-Roegner, Jessica
-76
-67
-73
-70
-93
-5
-Goodnight Dance
-5
-6-6¾
-6-7
-5-9°
-4-7¼
-4-5
-1:55.3
-28.2
-11.80
-L
-Sugg, Kurt
-Miller, Edward
-$58,000
-73
-58
-75
-61
-99
-4
-Tiffany Blue
-4
-4-3½
-4-4¾
-4-9
-ip5-7¼
-5-5¼
-1:55.3
-28.2
-24.00
-Widger, Samuel
-Oliverio, John
-$58,000
-73
-71
-71
-52
-98
-6
-Ella Jo
-6
-7-8¼
-7-9
-7-11½°
-6-9¼
-6-6¼
+1-5
+1-4
+1-3¼
 1:55.4
-28.1
-34.60
+30.0
+*0.70
 L
-Macdonald, Anthony
+†
+Merriman, Aaron
 Betts, Scott
-$58,000
-73
-52
-74
-60
-105
-7
-Heart Song
-7
-8-10
-9-12½°
-8-13°
-8-12¼
-7-7½
-1:56.0
-28.0
-11.00
+88
+95
+93
+84
+82
+4
+Mo Bay
+4
+4-3¼
+4-4½°
+3-6°
+2-4
+2-3¼
+1:56.2
+29.2
+9.90
 L
-Smith, Tyler
-Plested, Kathleen
-73
-46
-68
-69
-108
-8
-Jumpingjoy N
-8
-9-11½
-8-11½
-6-10½
-7-11¼
-8-9¾
-1:56.3
-29.0
-37.80
-L
+†
 Irvine, Justin
 Schillaci, Samuel
-71
-40
-79
-76
-89
-3
-Splash Of Pink
-3
-2-1
-2-2¼
-ip9-15
-9-30¼
-9-57
-2:06.0
-37.3
-2.00
-L
-Merriman, Aaron
-Kreiser, Cory
-$27,000
-22
+85
+82
+87
+77
+92
+1
+Royaltimestwo
+1
+3-1¾
+3-3½
+4-6¼
+5-8
+3-5¾
+1:57.0
+29.4
+8.20
+†
+Widger, Samuel
+Chupp, Marion
+82
+88
+85
+72
+83
+5
+Wiley Resources
+5
+5-4¾
+5-5¾°
+5-6½°°
+3-6½
+4-6½
+1:57.0
+30.0
+8.10
+Ciocca, John Jr
+Miller, Daniel
+$58,000
 81
-71
-19
+76
+88
+80
+81
+6
+Lt Loverboy
+6
+6-7½
+7-7½°
+7-8¾°
+7-9¼
+5-6¾
+1:57.1
+29.3
+2.40
+L
+†
+Noble, Daniel
+Harvey, Daren
+82
+66
+93
+79
+90
+8
+Stumpy
+8
+8-10¼
+8-10½
+8-9½
+8-10¼
+6-7½
+1:57.1
+29.3
+64.00
+L
+†
+Sugg, Kurt
+Miller, Edward
+83
+56
+94
+90
+92
+2
+Rankin
+2
+2-¼
+2-2¼
+2-5
+4-6¾
+7-9
+1:57.3
+30.4
+34.40
+†
+Kash, Keith Jr
+Roegner, Judy
+$22,500
+79
+94
+84
+72
+65
+7
+No Approval Needed
+7
+7-8¾
+6-6¾
+6-8
+6-9¼
+8-9¾
+1:57.4
+30.2
+64.70
+†
+Smith, Tyler
+Stahl, Ryan
+81
+62
+103
+81
+76
 1st Call
 2nd Call
 3rd Call
@@ -226,52 +210,52 @@ Finish
 3rd Frac
 Final Frac
 Race Times
-28.0
-56.4
-1:25.2
-1:54.3
+28.2
+57.1
+1:25.4
+1:55.4
 Splits
-28.0
+28.2
 28.4
 28.3
-29.1
+30.0
 Winner
-#2 Downthejerseyshore (4, M, Downbytheseaside - Gravity - Dragon Again)
+#3 Looks Like Moni (7, G, Muscle Hill - Thats All Moni - Cantab Hall)
 Scratches
-None
+#9 Mr Jeff (Lame)
 P#
 Horse
 Win
 Place
 Show
-2
-Downthejerseyshore
-4.00
-3.20
-2.40
+3
+Looks Like Moni
+3.40
+2.60
+2.10
+4
+Mo Bay
+5.20
+3.60
 1
-Mollys Ace N
-6.80
-4.20
-9
-Tequila Time
-9.20
-WPS Pool $11,323
+Royaltimestwo
+2.80
+WPS Pool $17,671
 Wager
 Payoff
 Pool
 Exacta
-(2/1 $6.40)
-$11,532
+(3/4 $12.40)
+$18,677
 Trifecta
-(2/1/9 $30.60)
-$12,395
+(3/4/1 $33.90)
+$12,605
 20 Cent Superfecta
-(2/1/9/5 $29.64)
-$9,008
+(3/4/1/5 $28.04)
+$11,859
 Pick Three-Pick 3
-(1/1/2 $22.30)
-$5,328
+(7/2/3,9 $89.40)
+$4,856
 Pick Four-Pick 4
-(3/1/1/2 $65.70)
-$16,339
+(3/7/2/3,9 $390.50)
+$15,013
