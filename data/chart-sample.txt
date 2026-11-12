@@ -1,27 +1,27 @@
-LOOKS LIKE MONI 2026-11-09 race 14
-http://www.trackmaster.com/cgi-bin/hchxml2html.cgi?track=NFLD&date=20261109&race=14&cardid=6&key=d3251a0b61af561b47c9c2e811aa74d6&source=stable
+PUNCHIN PREACHER 2026-11-11 race 11
+http://www.trackmaster.com/cgi-bin/hchxml2html.cgi?track=MEA&date=20261111&race=11&cardid=5&key=365de1587f361e60efbac296246e44f0&source=stable
 
-Race #14 at Northfield Park on November 9th, 2026
-Northfield Park - November 9th, 2026 - Race #14 - Late Betting
-Purchase the video replay of this race (TrackMaster Race Replays account required)
+Race #11 at The Meadows on November 11th, 2026
+The Meadows - November 11th, 2026 - Race #11 - Early Betting
+No video replay for this race available
 Distance
 1 mile
 Gait
 Trot
 Purse
-$14,000
+$7,100
 Class
-NW6500L4
+CDCLMNW2
 CR
-88
+70
 Off Time
-10:51 PM
+4:50 PM
 Condition
 Fast
 Temp
-41
+61
 Variant
--3
+-2
 P#
 Horse
 PP
@@ -44,163 +44,187 @@ Pace 1
 Pace 2
 Pace 3
 Pace 4
-3
-Looks Like Moni
-3
-1-¼°
-1-2¼
-1-5
-1-4
-1-3¼
-1:55.4
-30.0
-*0.70
-L
+4
+Dress Shoes
+4
+7-7
+7-8
+4-2½°
+5-3½
+1-hd
+1:57.4
+29.0
+*1.50
 †
-Merriman, Aaron
-Betts, Scott
-88
-95
-93
-84
-82
-4
-Mo Bay
-4
-4-3¼
-4-4½°
-3-6°
-2-4
-2-3¼
-1:56.2
+Indof, Jeremy
+Simpson, Dirk
+$20,250
+67
+57
+63
+65
+81
+1
+Sweet Judy T
+1
+2-1
+2-1½
+2-1
+2-1
+2-hd
+1:57.4
 29.2
-9.90
+8.50
 L
 †
-Irvine, Justin
-Schillaci, Samuel
-85
-82
-87
-77
-92
-1
-Royaltimestwo
-1
-3-1¾
-3-3½
-4-6¼
-5-8
-3-5¾
-1:57.0
-29.4
-8.20
-†
-Widger, Samuel
-Chupp, Marion
-82
-88
-85
-72
-83
-5
-Wiley Resources
-5
-5-4¾
-5-5¾°
-5-6½°°
-3-6½
-4-6½
-1:57.0
-30.0
-8.10
-Ciocca, John Jr
-Miller, Daniel
-$58,000
+Yoder, Wilbur
+Yoder, Wilbur
+$19,575
+67
 81
-76
-88
-80
-81
-6
-Lt Loverboy
-6
-6-7½
-7-7½°
-7-8¾°
-7-9¼
-5-6¾
-1:57.1
-29.3
-2.40
-L
-†
-Noble, Daniel
-Harvey, Daren
-82
+65
+45
+75
+2
+Bar Fly Bandit
+2
+3-2½
+3-3
+5-3
+4-2½
+3-hd
+1:57.4
+29.0
+6.60
+Walters, Justin
+Zendt, William
+$20,250
+67
+75
 66
-93
-79
-90
-8
-Stumpy
-8
-8-10¼
-8-10½
-8-9½
-8-10¼
-6-7½
-1:57.1
-29.3
-64.00
+44
+83
+5
+Outofyourrange
+5
+4-4
+4-4½
+3-1½
+3-2
+4-1
+1:58.0
+29.2
+8.00
+Brown, Brady
+Miller, Eric
+$22,950
+66
+69
+65
+55
+73
+6
+Gq Hanover
+6
+1-1°
+1-1½
+1-1
+1-1
+5-1½
+1:58.0
+29.4
+5.20
 L
 †
-Sugg, Kurt
-Miller, Edward
-83
-56
-94
-90
-92
-2
-Rankin
-2
-2-¼
-2-2¼
-2-5
-4-6¾
-7-9
-1:57.3
-30.4
-34.40
-†
-Kash, Keith Jr
-Roegner, Judy
-$22,500
-79
-94
-84
-72
+Zendt, Brian
+Zendt, William
+$16,875
+66
+85
+68
+44
+66
+3
+Winnie Werewolf
+3
+6-5½
+6-6½
+7-5
+6-5½
+6-6½
+1:59.0
+29.4
+23.20
+Shaw, Christopher
+Brown, Ashley
+$16,200
+60
+63
+64
+50
 65
 7
-No Approval Needed
+Rt Misty
 7
-7-8¾
-6-6¾
-6-8
-6-9¼
-8-9¾
-1:57.4
-30.2
-64.70
+8-8½
+8-9½
+6-4°
+7-6½
+7-7
+1:59.1
+30.1
+78.10
+L
+Johnston, Aaron
+Mullett, Justin
+$16,200
+60
+51
+64
+66
+60
+8
+Punchin Preacher
+8
+5-4½°
+5x-5½°
+9-10
+8-12½
+8-14¾
+2:00.4
+30.3
+3.50
+L
 †
-Smith, Tyler
-Stahl, Ryan
-81
-62
-103
-81
-76
+Bateson, Case
+Betts, Scott
+$20,250
+53
+68
+65
+26
+54
+9
+I Bee Cream
+9
+9-10
+9-11
+8x-8°
+x9x-15
+9-17½
+2:01.1
+31.2
+39.10
+L
+†
+Myers, Christian
+Vigneron, Charles
+$19,575
+50
+46
+65
+57
+34
 1st Call
 2nd Call
 3rd Call
@@ -211,51 +235,48 @@ Finish
 Final Frac
 Race Times
 28.2
-57.1
-1:25.4
-1:55.4
+58.1
+1:28.1
+1:57.4
 Splits
 28.2
-28.4
-28.3
+29.4
 30.0
+29.3
 Winner
-#3 Looks Like Moni (7, G, Muscle Hill - Thats All Moni - Cantab Hall)
+#4 Dress Shoes (3, G, The Veteran - Easter Leggs - Malabar Millennium)
 Scratches
-#9 Mr Jeff (Lame)
+None
 P#
 Horse
 Win
 Place
 Show
-3
-Looks Like Moni
-3.40
-2.60
-2.10
 4
-Mo Bay
-5.20
-3.60
-1
-Royaltimestwo
+Dress Shoes
+5.00
 2.80
-WPS Pool $17,671
+2.20
+1
+Sweet Judy T
+5.40
+3.20
+2
+Bar Fly Bandit
+5.80
+WPS Pool $8,569
 Wager
 Payoff
 Pool
 Exacta
-(3/4 $12.40)
-$18,677
+(4/1 $17.40)
+$11,915
 Trifecta
-(3/4/1 $33.90)
-$12,605
+(4/1/2 $123.80)
+$8,265
 20 Cent Superfecta
-(3/4/1/5 $28.04)
-$11,859
-Pick Three-Pick 3
-(7/2/3,9 $89.40)
-$4,856
-Pick Four-Pick 4
-(3/7/2/3,9 $390.50)
-$15,013
+(4/1/2/5 $37.60)
+$6,494
+Rolling Double-Daily Double
+(2/4 $11.20)
+$1,008
