@@ -1,27 +1,27 @@
-THREE WAY ACTION 2026-11-13 race 7
-http://www.trackmaster.com/cgi-bin/hchxml2html.cgi?track=MEA&date=20261113&race=7&cardid=5&key=ae5956a1191a5f987d590ee98e4b7261&source=stable
+PUNCHIN PREACHER 2026-11-18 race 6
+http://www.trackmaster.com/cgi-bin/hchxml2html.cgi?track=MEA&date=20261118&race=6&cardid=5&key=00b3dd638b723ea139cc02a13b6f98f8&source=stable
 
-Race #7 at The Meadows on November 13th, 2026
-The Meadows - November 13th, 2026 - Race #7 - Early Betting
+Race #6 at The Meadows on November 18th, 2026
+The Meadows - November 18th, 2026 - Race #6 - Early Betting
 No video replay for this race available
 Distance
 1 mile
 Gait
-Pace
+Trot
 Purse
-$11,800
+$7,100
 Class
-W2NW4EXTPM
+CDCLMNW2
 CR
-80
+68
 Off Time
-3:20 PM
+2:36 PM
 Condition
 Fast
 Temp
-42
+57
 Variant
-2
+-2
 P#
 Horse
 PP
@@ -44,175 +44,166 @@ Pace 1
 Pace 2
 Pace 3
 Pace 4
-9
-Talbot Andretti
-9
-1-1°
-1-1½
+1
+Fritzpatrick
+1
 1-1
-1-1½
-1-1¾
-1:53.1
-27.4
-2.10
-L
-Wrenn, Ronnie Jr
-Burke, Ronald
-79
-85
-65
-72
-96
-6
-Dry Ridge Erie
-6
-2-1
-2-1½
-3-2
-2-1½
-2-1¾
-1:53.3
-27.4
-3.90
-L
-Johnston, Shawn
-Johnston, Shawn
-77
-80
-62
-69
-95
-5
-Stay Fresh
-5
-3-2½
-3-3
-5-3½
-4-5
-3-5
-1:54.1
-28.0
-*2.10
-L
-Palone, David
-Presto, Brandon
-72
-73
-61
-69
-87
-3
-Western Raptor
-3
-6-7
-5-5½°
-2-1°
-3-4
-4-5¼
-1:54.1
-28.3
-5.10
-Yoder, Wilbur
-Parker, Norm
-73
-55
-69
-89
-77
-1
-Baby Jack Hanover
-1
-4-4
-4-4½
-7-5½
-5-6½
-5-7¾
-1:54.4
-28.1
-7.60
-L
-Indof, Jeremy
-Indof, Jeffrey
-70
-67
-61
-67
-84
-8
-Always B Hula
-8
-9-11½
-9-11°
-6-5°
-7-8
-6-7¾
-1:54.4
-28.2
-40.90
-Merriman, Aaron
-Balcerak, Neil
-72
-38
-67
-97
-85
-7
-Captain Said
-7
-7-8½
-6-7
-4-3°
-6-7
-7-8¾
-1:55.0
-29.0
-16.50
-L
-Irvine, Justin
-Johnson, Kevin
-70
-50
-70
-88
-71
-2
-Three Way Action
-2
-5-5½
-7-8½
-8-7½
-8-9½
-8-10¾
-1:55.2
-28.2
-115.50
-L
-Bateson, Case
-Betts, Scott
-67
-61
-51
-75
-81
-4
-Extra Rare
-4
-8-10
-8-10
-9-8°
-9-11
-9-12
+1-1
+1-2
+1-6½
+1-7¾
 1:55.3
-28.3
-103.20
+29.4
+2.90
+L
+†
+Merriman, Aaron
+Shaw, Jason
+$16,875
+78
+105
+68
+71
+67
+3
+Outofyourrange
+3
+3-1½
+3-1½
+2-2
+2-6½
+2-7¾
+1:57.1
+31.0
+7.20
+Miller, Eric
+Miller, Eric
+$22,950
+70
+99
+68
+70
+45
+8
+Cash Moni
+8
+8-9
+8-6½
+6-6½
+5-11
+3-10¼
+1:57.3
+30.3
+67.70
+L
+Brown, Brady
+Simpson, Dirk
+$13,500
+69
+71
+80
+73
+54
+5
+Dan's Dandy
+5
+6-6
+6-4°
+4-4½°°
+3-8½
+4-10¾
+1:57.4
+31.0
+*1.40
 L
 Walters, Justin
-Bresnahan, Jason
-65
-43
-63
-79
-77
+Pirillo, Justin
+$16,875
+67
+81
+75
+69
+42
+2
+Winnie Werewolf
+2
+4-3
+4-2½
+3-4
+4-10
+5-12
+1:58.0
+31.2
+20.40
+Shaw, Christopher
+Brown, Ashley
+$16,200
+66
+93
+70
+66
+36
+7
+Rt Misty
+7
+7-7½
+7-5
+5-5½
+6-11½
+6-14¾
+1:58.3
+31.3
+89.70
+L
+Johnston, Aaron
+Mullett, Justin
+$16,200
+64
+76
+78
+70
+31
+4
+Gq Hanover
+4
+5-4½
+5-3°
+7-7½°
+7-13½
+7-17¾
+1:59.1
+31.4
+4.00
+L
+†
+Zendt, Brian
+Zendt, William
+$16,875
+60
+87
+73
+54
+26
+6
+Punchin Preacher
+6
+2-1°
+2-1°
+8-8°
+8-25½
+8-30½
+2:01.3
+34.1
+5.40
+L
+†
+Bateson, Case
+Betts, Scott
+$20,250
+48
+102
+68
+44
 1st Call
 2nd Call
 3rd Call
@@ -222,17 +213,17 @@ Finish
 3rd Frac
 Final Frac
 Race Times
-27.4
-57.2
-1:25.2
-1:53.1
+27.2
+57.1
+1:25.4
+1:55.3
 Splits
-27.4
-29.3
-28.0
-27.4
+27.2
+29.4
+28.3
+29.4
 Winner
-#9 Talbot Andretti (3, H, Sweet Lou - Hot Spot Hanover - Well Said)
+#1 Fritzpatrick (4, G, Father Patrick - Glitzey Gal - Muscle Hill)
 Scratches
 None
 P#
@@ -240,31 +231,31 @@ Horse
 Win
 Place
 Show
-9
-Talbot Andretti
-6.20
-4.20
-2.80
-6
-Dry Ridge Erie
-4.00
-2.40
-5
-Stay Fresh
-2.20
-WPS Pool $8,707
+1
+Fritzpatrick
+7.80
+3.80
+3.00
+3
+Outofyourrange
+6.40
+3.60
+8
+Cash Moni
+17.20
+WPS Pool $8,561
 Wager
 Payoff
 Pool
 Exacta
-(9/6 $25.00)
-$13,603
+(1/3 $45.80)
+$12,078
 Trifecta
-(9/6/5 $63.40)
-$9,787
+(1/3/8 $1,245.80)
+$8,374
 20 Cent Superfecta
-(9/6/5/3 $14.32)
-$8,871
+(1/3/8/5 $478.28)
+$7,068
 Rolling Double-Daily Double
-(2/9 $100.60)
-$1,195
+(1/1 $22.00)
+$1,098
