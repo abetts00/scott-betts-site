@@ -1,27 +1,27 @@
-PUNCHIN PREACHER 2026-11-18 race 6
-http://www.trackmaster.com/cgi-bin/hchxml2html.cgi?track=MEA&date=20261118&race=6&cardid=5&key=00b3dd638b723ea139cc02a13b6f98f8&source=stable
+LOOKS LIKE MONI 2026-11-19 race 1
+http://www.trackmaster.com/cgi-bin/hchxml2html.cgi?track=MEA&date=20261119&race=1&cardid=5&key=d35c31549959dc28fd2aaddea4fc53af&source=stable
 
-Race #6 at The Meadows on November 18th, 2026
-The Meadows - November 18th, 2026 - Race #6 - Early Betting
+Race #1 at The Meadows on November 19th, 2026
+The Meadows - November 19th, 2026 - Race #1 - Early Betting
 No video replay for this race available
 Distance
 1 mile
 Gait
 Trot
 Purse
-$7,100
+$21,000
 Class
-CDCLMNW2
+OPEN HCP
 CR
-68
+93
 Off Time
-2:36 PM
+12:51 PM
 Condition
 Fast
 Temp
-57
+62
 Variant
--2
+-3
 P#
 Horse
 PP
@@ -44,166 +44,160 @@ Pace 1
 Pace 2
 Pace 3
 Pace 4
-1
-Fritzpatrick
-1
-1-1
+9
+Winslow
+8
+1-1°
+1-1½
 1-1
 1-2
-1-6½
-1-7¾
-1:55.3
-29.4
-2.90
+1-2¾
+1:51.2
+27.4
+*0.70
+L
+Merriman, Aaron
+Kahrig, Dana
+99
+106
+92
+92
+108
+1
+Wild Bill Kelso
+1
+2-1
+2-1½
+2-1
+2-2
+2-2¾
+1:52.0
+28.1
+1.90
+L
+Palone, David
+Presto, Brandon
+94
+99
+88
+92
+98
+8
+Prince Of Honor
+7
+3-2½
+3-3½
+3-3
+3-3
+3-4¾
+1:52.2
+28.1
+12.20
+L
+Indof, Jeremy
+Burke, Ronald
+93
+94
+87
+93
+99
+3
+Sainthood
+2
+4-4
+4-5
+4-4
+4-4
+4-5¾
+1:52.3
+28.1
+34.00
 L
 †
-Merriman, Aaron
-Shaw, Jason
-$16,875
-78
-105
-68
-71
-67
-3
-Outofyourrange
-3
-3-1½
-3-1½
-2-2
-2-6½
-2-7¾
-1:57.1
-31.0
-7.20
-Miller, Eric
-Miller, Eric
-$22,950
-70
+Irvine, Justin
+Kahrig, Dana
+91
+87
+86
+94
 99
-68
-70
-45
-8
-Cash Moni
-8
-8-9
-8-6½
-6-6½
-5-11
-3-10¼
-1:57.3
-30.3
-67.70
+4
+Guido Di
+3
+5-5½
+5-6½
+6-6
+5-5½
+5-7¾
+1:53.0
+28.1
+30.50
 L
 Brown, Brady
-Simpson, Dirk
-$13,500
+Schoeffel, Stephen
+89
+81
+86
+92
+99
+7
+Big Shoes
+6
+8-10
+8-11
+8-8
+7-6½
+6-8¼
+1:53.0
+27.4
+7.60
+†
+Burke, Brad
+Burke, Ronald
+90
+64
+87
+103
+105
+6
+Looks Like Moni
+5
+7-8½
+7-9½
+7-7°
+8-7½
+7-8½
+1:53.0
+28.0
+36.60
+L
+†
+Jenson, Brady
+Betts, Scott
+88
 69
-71
-80
-73
-54
+86
+99
+99
 5
-Dan's Dandy
-5
+Good Feeln To Know
+4
+6-7
+6-8
+5-5½°
 6-6
-6-4°
-4-4½°°
-3-8½
-4-10¾
-1:57.4
-31.0
-*1.40
+8-8½
+1:53.0
+28.2
+32.00
 L
 Walters, Justin
-Pirillo, Justin
-$16,875
-67
-81
+Hercules, James Jr
+88
 75
-69
-42
-2
-Winnie Werewolf
-2
-4-3
-4-2½
-3-4
-4-10
-5-12
-1:58.0
-31.2
-20.40
-Shaw, Christopher
-Brown, Ashley
-$16,200
-66
+86
+99
 93
-70
-66
-36
-7
-Rt Misty
-7
-7-7½
-7-5
-5-5½
-6-11½
-6-14¾
-1:58.3
-31.3
-89.70
-L
-Johnston, Aaron
-Mullett, Justin
-$16,200
-64
-76
-78
-70
-31
-4
-Gq Hanover
-4
-5-4½
-5-3°
-7-7½°
-7-13½
-7-17¾
-1:59.1
-31.4
-4.00
-L
-†
-Zendt, Brian
-Zendt, William
-$16,875
-60
-87
-73
-54
-26
-6
-Punchin Preacher
-6
-2-1°
-2-1°
-8-8°
-8-25½
-8-30½
-2:01.3
-34.1
-5.40
-L
-†
-Bateson, Case
-Betts, Scott
-$20,250
-48
-102
-68
-44
 1st Call
 2nd Call
 3rd Call
@@ -214,48 +208,45 @@ Finish
 Final Frac
 Race Times
 27.2
-57.1
-1:25.4
-1:55.3
+56.0
+1:23.3
+1:51.2
 Splits
 27.2
-29.4
 28.3
-29.4
+27.3
+27.4
 Winner
-#1 Fritzpatrick (4, G, Father Patrick - Glitzey Gal - Muscle Hill)
+#9 Winslow (5, G, Swan For All - Allie Labrook - Here Comes Herbie)
 Scratches
-None
+#2 Redwhite N Goo (Sick)
 P#
 Horse
 Win
 Place
 Show
+9
+Winslow
+3.40
+2.20
+2.10
 1
-Fritzpatrick
-7.80
-3.80
-3.00
-3
-Outofyourrange
-6.40
-3.60
+Wild Bill Kelso
+2.60
+2.40
 8
-Cash Moni
-17.20
-WPS Pool $8,561
+Prince Of Honor
+3.60
+WPS Pool $10,045
 Wager
 Payoff
 Pool
 Exacta
-(1/3 $45.80)
-$12,078
+(9/1 $6.60)
+$14,207
 Trifecta
-(1/3/8 $1,245.80)
-$8,374
+(9/1/8 $36.40)
+$8,739
 20 Cent Superfecta
-(1/3/8/5 $478.28)
-$7,068
-Rolling Double-Daily Double
-(1/1 $22.00)
-$1,098
+(9/1/8/3 $19.28)
+$8,145
