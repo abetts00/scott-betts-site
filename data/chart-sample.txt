@@ -1,25 +1,25 @@
-LOOKS LIKE MONI 2026-11-19 race 1
-http://www.trackmaster.com/cgi-bin/hchxml2html.cgi?track=MEA&date=20261119&race=1&cardid=5&key=d35c31549959dc28fd2aaddea4fc53af&source=stable
+THREE WAY ACTION 2026-11-20 race 8
+http://www.trackmaster.com/cgi-bin/hchxml2html.cgi?track=MEA&date=20261120&race=8&cardid=5&key=154badcc66c1b4148fd4fc072592d474&source=stable
 
-Race #1 at The Meadows on November 19th, 2026
-The Meadows - November 19th, 2026 - Race #1 - Early Betting
+Race #8 at The Meadows on November 20th, 2026
+The Meadows - November 20th, 2026 - Race #8 - Early Betting
 No video replay for this race available
 Distance
 1 mile
 Gait
-Trot
+Pace
 Purse
-$21,000
+$7,300
 Class
-OPEN HCP
+CDCLMW1NW4
 CR
-93
+74
 Off Time
-12:51 PM
+3:25 PM
 Condition
 Fast
 Temp
-62
+64
 Variant
 -3
 P#
@@ -44,160 +44,184 @@ Pace 1
 Pace 2
 Pace 3
 Pace 4
-9
-Winslow
-8
-1-1°
+5
+He's So Smart
+5
+2-½
 1-1½
 1-1
 1-2
-1-2¾
-1:51.2
-27.4
-*0.70
+1-1½
+1:52.3
+29.0
+3.30
 L
 Merriman, Aaron
-Kahrig, Dana
-99
-106
-92
-92
-108
+Bendis, Randall
+$22,500
+75
+84
+75
+77
+64
 1
-Wild Bill Kelso
+Rollin Sevens
 1
-2-1
+3-1½
+3-3
+3-2
+3-3½
+2-1½
+1:52.4
+28.4
+*0.90
+L
+Indof, Jeremy
+Hercules, James Jr
+$18,750
+74
+80
+68
+81
+66
+7
+Stay Dancing
+7
+1-½°
 2-1½
 2-1
 2-2
-2-2¾
-1:52.0
-28.1
-1.90
-L
-Palone, David
-Presto, Brandon
-94
-99
-88
-92
-98
-8
-Prince Of Honor
-7
-3-2½
-3-3½
-3-3
-3-3
 3-4¾
-1:52.2
-28.1
-12.20
+1:53.3
+29.4
+17.10
 L
-Indof, Jeremy
-Burke, Ronald
-93
-94
-87
-93
-99
-3
-Sainthood
-2
-4-4
-4-5
-4-4
-4-4
-4-5¾
-1:52.3
-28.1
-34.00
-L
-†
 Irvine, Justin
 Kahrig, Dana
-91
+$22,500
+71
 87
-86
-94
-99
-4
-Guido Di
-3
-5-5½
-5-6½
-6-6
-5-5½
-5-7¾
-1:53.0
-28.1
-30.50
+68
+80
+50
+2
+Three Way Action
+2
+4-3
+4-4½
+4-3
+4-4½
+4-5
+1:53.3
+29.2
+10.80
 L
-Brown, Brady
-Schoeffel, Stephen
-89
-81
-86
-92
-99
-7
-Big Shoes
-6
-8-10
-8-11
-8-8
-7-6½
-6-8¼
-1:53.0
-27.4
-7.60
-†
-Burke, Brad
-Burke, Ronald
-90
-64
-87
-103
-105
-6
-Looks Like Moni
-5
-7-8½
-7-9½
-7-7°
-8-7½
-7-8½
-1:53.0
-28.0
-36.60
-L
-†
-Jenson, Brady
+Bateson, Case
 Betts, Scott
-88
-69
-86
-99
-99
-5
-Good Feeln To Know
-4
+$22,500
+70
+74
+68
+83
+56
+6
+Saulsbrook Gunner
+6
+7-7½
+7-8½
+6-4½°
 6-7
-6-8
+5-7¼
+1:54.0
+29.3
+44.90
+Johnston, Shawn
+Johnston, Shawn
+$18,750
+69
+56
+70
+94
+54
+8
+Ts Cody
+8
+8-9
+8-10
+7-5½
+5-6½
+6-7¾
+1:54.1
+29.2
+25.20
+L
+Macdonald, Anthony
+Twaddle, Timothy
+$22,500
+69
+51
+71
+98
+57
+4
+Caviart Sheridan
+4
+5-4½
 5-5½°
-6-6
-8-8½
-1:53.0
-28.2
-32.00
+5-3½°
+7-8
+7-8½
+1:54.1
+30.0
+3.30
+L
+Barnard, Jesse
+Barnard, Savannah
+$22,500
+67
+68
+70
+85
+44
+9
+Extra Rare
+9
+9-10½
+9-11½
+9-8°
+8-10½
+8-11¼
+1:54.4
+29.3
+91.70
 L
 Walters, Justin
-Hercules, James Jr
-88
-75
-86
-99
+Bresnahan, Jason
+$15,000
+66
+45
+71
 93
+52
+3
+Pursuitofpapiness
+3
+6-6
+6-7
+8-7½
+9-12
+9-13½
+1:55.1
+30.1
+74.30
+Myers, Lucas
+Zito, David
+$18,750
+62
+62
+70
+76
+40
 1st Call
 2nd Call
 3rd Call
@@ -208,45 +232,51 @@ Finish
 Final Frac
 Race Times
 27.2
-56.0
+56.1
 1:23.3
-1:51.2
+1:52.3
 Splits
 27.2
-28.3
-27.3
-27.4
+28.4
+27.2
+29.0
 Winner
-#9 Winslow (5, G, Swan For All - Allie Labrook - Here Comes Herbie)
+#5 He's So Smart (3, G, American Ideal - Wisdom - Artsplace)
 Scratches
-#2 Redwhite N Goo (Sick)
+None
 P#
 Horse
 Win
 Place
 Show
-9
-Winslow
-3.40
-2.20
-2.10
+5
+He's So Smart
+8.60
+3.80
+3.00
 1
-Wild Bill Kelso
-2.60
-2.40
-8
-Prince Of Honor
-3.60
-WPS Pool $10,045
+Rollin Sevens
+2.20
+2.20
+7
+Stay Dancing
+6.00
+WPS Pool $6,458
 Wager
 Payoff
 Pool
 Exacta
-(9/1 $6.60)
-$14,207
+(5/1 $20.20)
+$5,661
 Trifecta
-(9/1/8 $36.40)
-$8,739
+(5/1/7 $266.80)
+$6,842
 20 Cent Superfecta
-(9/1/8/3 $19.28)
-$8,145
+(5/1/7/2 $62.66)
+$4,585
+Rolling Double-Daily Double
+(2/5 $12.80)
+$1,017
+50 Cent Pick-4-Pick 4
+(8/4/2/5 $51.95)
+$3,524
