@@ -1,27 +1,27 @@
-THREE WAY ACTION 2026-11-20 race 8
-http://www.trackmaster.com/cgi-bin/hchxml2html.cgi?track=MEA&date=20261120&race=8&cardid=5&key=154badcc66c1b4148fd4fc072592d474&source=stable
+ELLA JO 2026-11-22 race 12
+http://www.trackmaster.com/cgi-bin/hchxml2html.cgi?track=NFLD&date=20261122&race=12&cardid=6&key=b8cb57b58aed3de68429e9d87376a23b&source=stable
 
-Race #8 at The Meadows on November 20th, 2026
-The Meadows - November 20th, 2026 - Race #8 - Early Betting
-No video replay for this race available
+Race #12 at Northfield Park on November 22nd, 2026
+Northfield Park - November 22nd, 2026 - Race #12 - Late Betting
+Purchase the video replay of this race (TrackMaster Race Replays account required)
 Distance
 1 mile
 Gait
 Pace
 Purse
-$7,300
+$14,000
 Class
-CDCLMW1NW4
+FMNW6500L4
 CR
-74
+85
 Off Time
-3:25 PM
+10:38 PM
 Condition
 Fast
 Temp
-64
+53
 Variant
--3
+0
 P#
 Horse
 PP
@@ -44,184 +44,180 @@ Pace 1
 Pace 2
 Pace 3
 Pace 4
-5
-He's So Smart
-5
-2-½
-1-1½
-1-1
-1-2
-1-1½
-1:52.3
-29.0
-3.30
+1
+Nase Vira A
+1
+2-1¼
+1-1¾
+1-¾
+1-¾
+1-nk
+1:53.3
+30.0
+8.30
 L
 Merriman, Aaron
-Bendis, Randall
-$22,500
-75
+Digati, Salvatore
+86
+114
 84
-75
-77
-64
-1
-Rollin Sevens
-1
+76
+70
+7
+Jen Tilly
+7
+1-1¼°
+2-1¾
+3-1¼
 3-1½
-3-3
-3-2
-3-3½
-2-1½
-1:52.4
-28.4
-*0.90
-L
-Indof, Jeremy
-Hercules, James Jr
-$18,750
-74
-80
-68
-81
-66
-7
-Stay Dancing
-7
-1-½°
-2-1½
-2-1
-2-2
-3-4¾
+2-nk
 1:53.3
 29.4
-17.10
-L
-Irvine, Justin
-Kahrig, Dana
-$22,500
-71
-87
-68
-80
-50
-2
-Three Way Action
-2
-4-3
-4-4½
-4-3
-4-4½
-4-5
-1:53.3
-29.2
-10.80
-L
-Bateson, Case
-Betts, Scott
-$22,500
-70
-74
-68
-83
-56
-6
-Saulsbrook Gunner
-6
-7-7½
-7-8½
-6-4½°
-6-7
-5-7¼
-1:54.0
-29.3
-44.90
-Johnston, Shawn
-Johnston, Shawn
-$18,750
-69
-56
-70
-94
-54
-8
-Ts Cody
-8
-8-9
-8-10
-7-5½
-5-6½
-6-7¾
-1:54.1
-29.2
-25.20
+2.40
 L
 Macdonald, Anthony
-Twaddle, Timothy
-$22,500
-69
-51
-71
-98
-57
+Burke, Ronald
+89
+123
+74
+80
+77
 4
-Caviart Sheridan
+Allsmokeandmirrors
 4
-5-4½
-5-5½°
-5-3½°
-7-8
-7-8½
-1:54.1
-30.0
-3.30
+7-8¾
+7-7½°
+7-4½
+5-3¾
+3-1
+1:53.4
+29.1
+6.30
 L
-Barnard, Jesse
-Barnard, Savannah
-$22,500
-67
-68
-70
+Ciocca, John Jr
+Mcdonough, Shawn
 85
-44
-9
-Extra Rare
-9
-9-10½
-9-11½
-9-8°
-8-10½
-8-11¼
-1:54.4
-29.3
-91.70
+85
+84
+88
+84
+2
+Splash Of Pink
+2
+5-5½
+5-5¾
+4-3¼
+4-3
+4-2½
+1:54.0
+29.4
+37.10
 L
-Walters, Justin
-Bresnahan, Jason
-$15,000
-66
-45
-71
-93
-52
+Kreiser, Cory
+Kreiser, Cory
+84
+98
+78
+86
+73
+9
+Downthejerseyshore
+[9
+3-2½
+3-3¼
+2-¾°
+2-¾
+5-3
+1:54.1
+30.2
+*1.10
+L
+Irvine, Justin
+Presto, Brandon
+$32,625
+85
+111
+77
+87
+62
+5
+Grannys Watching
+5
+4-4
+4-4¼°
+5-3½°
+6-5
+6-4
+1:54.2
+30.0
+24.80
+L
+Noble, Daniel
+Fritz, Taylor
+$27,000
+82
+103
+78
+79
+68
+6
+Ella Jo
+6
+8-10
+8-8¾°
+8-6¼°°
+8-7¾
+7-4¾
+1:54.3
+29.3
+67.40
+L
+Widger, Samuel
+Betts, Scott
+$58,000
+82
+81
+85
+87
+77
 3
-Pursuitofpapiness
+Ribbon Ridge
 3
-6-6
-6-7
-8-7½
-9-12
-9-13½
-1:55.1
+6-6¾
+6-6¼°
+6-4½°°
+7-6½
+8-5½
+1:54.3
 30.1
-74.30
-Myers, Lucas
-Zito, David
-$18,750
-62
-62
+7.00
+Angus, Tyler
+Millner, Jessica
+81
+93
+81
+83
+67
+8
+Goodnight Dance
+8
+9-13
+9-10¾
+9-8¾
+9-8¾
+9-6¾
+1:55.0
+29.3
+54.50
+L
+Sugg, Kurt
+Miller, Edward
+$58,000
+82
 70
-76
-40
+91
+87
+81
 1st Call
 2nd Call
 3rd Call
@@ -231,17 +227,17 @@ Finish
 3rd Frac
 Final Frac
 Race Times
-27.2
-56.1
+26.2
+55.1
 1:23.3
-1:52.3
+1:53.3
 Splits
-27.2
+26.2
 28.4
-27.2
-29.0
+28.2
+30.0
 Winner
-#5 He's So Smart (3, G, American Ideal - Wisdom - Artsplace)
+#1 Nase Vira A (6, M, Alta Christiano - Sovereign Faith - Live Or Die)
 Scratches
 None
 P#
@@ -249,34 +245,28 @@ Horse
 Win
 Place
 Show
-5
-He's So Smart
-8.60
-3.80
-3.00
 1
-Rollin Sevens
-2.20
-2.20
+Nase Vira A
+18.60
+8.00
+3.80
 7
-Stay Dancing
-6.00
-WPS Pool $6,458
+Jen Tilly
+5.80
+3.80
+4
+Allsmokeandmirrors
+5.00
+WPS Pool $19,234
 Wager
 Payoff
 Pool
 Exacta
-(5/1 $20.20)
-$5,661
+(1/7 $45.70)
+$19,945
 Trifecta
-(5/1/7 $266.80)
-$6,842
+(1/7/4 $237.30)
+$17,381
 20 Cent Superfecta
-(5/1/7/2 $62.66)
-$4,585
-Rolling Double-Daily Double
-(2/5 $12.80)
-$1,017
-50 Cent Pick-4-Pick 4
-(8/4/2/5 $51.95)
-$3,524
+(1/7/4/2 $544.72)
+$14,570
